@@ -1,22 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-
+import CV from './assets/BilalOzlu_CV.pdf';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Bilal ÖZLÜ
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <a href={CV}>
+          See my CV
         </a>
+        <p>
+          Buraya bi pörtföy gelcek, bi de afilli yazılar, şööle tooltipli filan interaktif bi cv
+        </p>
       </header>
     </div>
   );

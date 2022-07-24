@@ -1,19 +1,24 @@
 import './App.css';
-import CV from './assets/BilalOzlu_CV.pdf';
+import { Link } from "react-router-dom";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
+      <header>
+        <h2>
           Bilal ÖZLÜ
-        </p>
-        <a href={CV}>
-          See my CV
+        </h2>
+        <a href="BilalOzlu_CV.pdf">
+          See my CV in pdf
         </a>
-        <p>
-          Buraya bi pörtföy gelcek, bi de afilli yazılar, şööle tooltipli filan interaktif bi cv
-        </p>
+          <Link to={"./CV"}>See my digital interactive super uber mega CV (under construction)</Link>
       </header>
+      <footer>
+        <p>
+          Burası benim tarlam bilader!
+        </p>
+        <img src="korkuluk.png" width="100px"/>
+      </footer>
     </div>
   );
 }

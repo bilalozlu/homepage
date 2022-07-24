@@ -1,14 +1,31 @@
 .App {
   text-align: center;
+  min-height: 100vh;
+  background-color: #282c34;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+a{
+  color: white;
+}
+a:hover {
+  color: teal;
 }

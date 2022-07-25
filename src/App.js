@@ -17,7 +17,7 @@ function App() {
         <p>
           Burası benim tarlam bilader!
         </p>
-        <img src="korkuluk.png" width="100px"/>
+        <img alt="scarecrow" src="korkuluk.png" width="100px"/>
       </footer>
     </div>
   );

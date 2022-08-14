@@ -1,13 +1,32 @@
+import React, {useState} from 'react';
 import './CV.css';
+import HeaderTabs from './CV_components/header_tabs.js';
+import About from './CV_components/about.js';
+import Experience from './CV_components/experience';
+import Education from './CV_components/education';
+import SoftwareSkills from './CV_components/software_skills';
+import TestScores from './CV_components/test_scores';
+
 
 function CV() {
+  const [selectedTab, setSelectedTab] = useState('About');
+
+  function handleSelect(chosen) {
+    setSelectedTab(chosen);
+  };
+
   return (
     <div className='cv'>
-      <header>
-        <p>
-          Buraya bi pörtföy gelcek, şööle tooltipli filan interaktif bi cv
-        </p>
-      </header>
+      <HeaderTabs func={handleSelect}/>
+      {
+        {
+          'About': <About />,
+          'Experience': <Experience />,
+          'Education': <Education />,
+          'SoftwareSkills': <SoftwareSkills />,
+          'TestScores': <TestScores />
+        }[selectedTab]
+      }
     </div>
   );
 }

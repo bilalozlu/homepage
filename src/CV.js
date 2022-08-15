@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './CV.css';
 import HeaderTabs from './CV_components/header_tabs.js';
 import About from './CV_components/about.js';
@@ -6,6 +6,7 @@ import Experience from './CV_components/experience';
 import Education from './CV_components/education';
 import SoftwareSkills from './CV_components/software_skills';
 import TestScores from './CV_components/test_scores';
+import Contacts from './CV_components/contacts.js';
 
 
 function CV() {
@@ -17,7 +18,7 @@ function CV() {
 
   return (
     <div className='cv'>
-      <HeaderTabs func={handleSelect}/>
+      <HeaderTabs func={handleSelect} selected={selectedTab} />
       {
         {
           'About': <About />,
@@ -27,6 +28,7 @@ function CV() {
           'TestScores': <TestScores />
         }[selectedTab]
       }
+      <Contacts />
     </div>
   );
 }

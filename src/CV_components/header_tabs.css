@@ -1,0 +1,50 @@
+.header_tabs {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-flex;
+    height: 75px;
+    background-color: #282c34;
+}
+
+.title {
+    min-width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-satrt;
+    font-size: 18px;
+    color: white;
+}
+
+.mail {
+    min-width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+.tabs {
+    width: 80%;
+}
+
+button {
+    height: 100%;
+    width: 20%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #282c34;
+}
+
+button:hover {
+    border: 5px teal solid;
+    border-top:  none;
+}
+
+button.selected {
+    border: 5px navy solid;
+    border-top:  none;
+}

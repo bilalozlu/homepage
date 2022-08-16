@@ -1,13 +1,24 @@
+import './cv_section.css';
 
 function Education() {
-    return (
+  return (
+    <div className="cv_section">
       <div>
-          <p>
-            ODTÜ
-          </p>
+        <p className='title'>
+          ODTÜ - Computer Engineering
+        </p>
+        <p className='text'>
+          2020
+        </p>
+        <p className='text'>
+          2.53
+        </p>
       </div>
-    );
-  }
-  
-  export default Education;
-  
+      <div className='photo'>
+        <img alt='profile' src="profile.jpg" />
+      </div>
+    </div>
+  );
+}
+
+export default Education;

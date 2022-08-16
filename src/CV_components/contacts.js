@@ -19,13 +19,13 @@ function Contacts() {
       </button>
       <div className={`contacts ${!isContactsOpen && 'closed'}`}>
       <p>
-        Linkedin
+        Ln
       </p>
       <p>
-        Github
+        Gb
       </p>
       <p>
-        Hackerrank
+        Hk
       </p>
     </div>
       </div >

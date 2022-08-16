@@ -7,12 +7,12 @@
     background-color: #282c34;
 }
 
-.title {
+.name {
     min-width: 10%;
     display: flex;
     align-items: center;
     justify-content: flex-satrt;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
 }
 
@@ -33,7 +33,7 @@
 button {
     height: 100%;
     width: 20%;
-    font-size: 16px;
+    font-size: 24px;
     border: none;
     cursor: pointer;
     background-color: #282c34;

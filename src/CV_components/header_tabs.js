@@ -4,7 +4,7 @@ function HeaderTabs(props) {
 
   return (
     <div className='header_tabs'>
-      <div className='title'>
+      <div className='name'>
         <p>Bilal Özlü</p>
       </div>
       <div className='tabs'>

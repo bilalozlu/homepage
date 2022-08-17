@@ -1,24 +1,26 @@
 .contactsArea {
-    display: flex;
-    align-items: center;
     position: fixed;
-    bottom: 50%;
-    right: 0;
+    bottom: 0;
+    right: 50%;
 }
 
 .arrow{
     background-color: cadetblue;
-    height: 40px;
+    margin-left: 50px;
+    height: 30px;
     width: 50px;
 }
 
 .contacts {
+    display: flex;
+    justify-content: space-around;
     background-color: cadetblue;
-    width: 50px;
-    -webkit-transition: width 1s ease-in-out;
-    transition: width 1s ease-in-out;
+    width: 150px;
+    height: 50px;
+    -webkit-transition: height 1s ease-in-out;
+    transition: height 1s ease-in-out;
 }
 
 .contacts.closed {
-    width: 0px;
+    height: 0px;
 }

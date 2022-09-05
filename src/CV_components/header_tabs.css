@@ -30,21 +30,22 @@
     width: 80%;
 }
 
-button {
+.headTab {
     height: 100%;
     width: 20%;
     font-size: 24px;
     border: none;
     cursor: pointer;
     background-color: #282c34;
+    color: white;
 }
 
-button:hover {
+.headTab:hover {
     border: 5px teal solid;
     border-top:  none;
 }
 
-button.selected {
+.headTab.selected {
     border: 5px navy solid;
     border-top:  none;
 }

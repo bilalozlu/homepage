@@ -9,12 +9,10 @@ function App() {
           Bilal ÖZLÜ
         </h2>
         <a href="BilalOzlu_CV.pdf">
-          See my resume
+          Resume
         </a>
-        <Link to={"./CV"}>See my portfolio (under construction)</Link>
-        <a href="https://translator.bilalozlu.com/">
-          See my recent projects
-        </a>
+        <Link to={"./CV"}>Portfolio (under construction)</Link>
+        <Link to={"./projects"}>Projects</Link>
       </header>
       <footer>
         <p>

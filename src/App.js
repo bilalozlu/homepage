@@ -13,7 +13,7 @@ function App() {
         </a>
         <Link to={"./CV"}>See my portfolio (under construction)</Link>
         <a href="https://translator.bilalozlu.com/">
-          See my projects
+          See my recent projects
         </a>
       </header>
       <footer>

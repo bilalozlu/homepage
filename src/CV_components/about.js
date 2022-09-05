@@ -8,7 +8,16 @@ function About() {
           Bilal Özlü
         </p>
         <p className='text'>
-          A software engineer loves to code, develop and be beneficial, especially in front-end
+          A software engineer specialized on React & JS
+        </p>
+        <p className='text'>
+          loves to code
+        </p>
+        <p className='text'>
+          eager to learn
+        </p>
+        <p className='text'>
+          excited to implement new ideas
         </p>
       </div>
       <div className='photo'>

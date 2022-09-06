@@ -24,7 +24,7 @@ function TestScores() {
         </p>
       </div>
       <div className='photo'>
-        <img alt='profile' src="profile.jpg" />
+        <img alt='scores' src="scores.jpg" />
       </div>
     </div>
     );

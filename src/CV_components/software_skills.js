@@ -48,7 +48,7 @@ function SoftwareSkills() {
         </p>
       </div>
       <div className='photo'>
-        <img alt='profile' src="profile.jpg" />
+        <img alt='skills' src="skills.jpg" />
       </div>
     </div>
   );

@@ -20,8 +20,8 @@ function About() {
           excited to implement new ideas
         </p>
       </div>
-      <div className='photo'>
-        <img alt='profile' src="profile.jpg" />
+      <div className='photoArea'>
+        <img alt='profile' src="profile.jpg"  width="200px" className='photo'/>
       </div>
     </div>
   );

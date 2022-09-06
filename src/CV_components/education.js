@@ -14,8 +14,8 @@ function Education() {
           2.53
         </p>
       </div>
-      <div className='photo'>
-        <img alt='education' src="education.jpeg" />
+      <div className='photoArea'>
+        <img alt='education' src="education.jpeg" width="200px" className='photo'/>
       </div>
     </div>
   );

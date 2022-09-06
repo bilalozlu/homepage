@@ -47,8 +47,8 @@ function SoftwareSkills() {
           MySQL
         </p>
       </div>
-      <div className='photo'>
-        <img alt='skills' src="skills.jpg" />
+      <div className='photoArea'>
+        <img alt='skills' src="skills.jpg" width="200px" className='photo'/>
       </div>
     </div>
   );

@@ -23,8 +23,8 @@ function TestScores() {
           Academic Education Entrance Exam requires basic math skills and understanding complex paragraphs
         </p>
       </div>
-      <div className='photo'>
-        <img alt='scores' src="scores.jpg" />
+      <div className='photoArea'>
+        <img alt='scores' src="scores.jpg" width="200px" className='photo'/>
       </div>
     </div>
     );

@@ -64,8 +64,8 @@ function Experience() {
           Developing web application (PHP, Apache, MySQL, HTML/CSS)
         </p>
       </div>
-      <div className='photo'>
-        <img alt='experience' src="experience.jpg" />
+      <div className='photoArea'>
+        <img alt='experience' src="experience.jpg" width="200px" className='photo'/>
       </div>
     </div>
   );

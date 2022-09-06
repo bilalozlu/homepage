@@ -11,8 +11,11 @@ function App() {
         <a href="BilalOzlu_CV.pdf">
           Resume
         </a>
-        <Link to={"./portfolio"}>Portfolio (under construction)</Link>
+        <Link to={"./CV"}>Portfolio (under construction)</Link>
         <Link to={"./projects"}>Projects</Link>
+        <a href="#">
+          Blogs (coming soon)
+        </a>
       </header>
       <footer>
         <p>

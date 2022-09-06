@@ -1,11 +1,22 @@
 import './cv_section.css';
+import React, { useState } from 'react';
 
 function Experience() {
+  const [hiddenStyle, setHiddenStyle] = useState({ display: 'none', color: 'white' });
+
   return (
     <div className="cv_section">
       <div>
-        <p className='title'>
+        <p className='title' onMouseEnter={e => {
+          setHiddenStyle({ display: 'block', color: 'white' });
+        }}
+          onMouseLeave={e => {
+            setHiddenStyle({ display: 'none', color: 'white' })
+          }}>
           HAVELSAN
+        </p>
+        <p style={hiddenStyle}>
+          02.2022 – ongoing
         </p>
         <p className='text'>
           Maintaining large Java project (debugging and analysis)
@@ -54,7 +65,7 @@ function Experience() {
         </p>
       </div>
       <div className='photo'>
-        <img alt='profile' src="profile.jpg" />
+        <img alt='experience' src="experience.jpg" />
       </div>
     </div>
   );

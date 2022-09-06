@@ -13,7 +13,7 @@ function App() {
         </a>
         <Link to={"./CV"}>Portfolio (under construction)</Link>
         <Link to={"./projects"}>Projects</Link>
-        <a href="#">
+        <a href="/">
           Blogs (coming soon)
         </a>
       </header>

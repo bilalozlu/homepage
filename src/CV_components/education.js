@@ -10,12 +10,9 @@ function Education() {
         <p className='text'>
           2020
         </p>
-        <p className='text'>
-          2.53
-        </p>
       </div>
       <div className='photoArea'>
-        <img alt='education' src="education.jpeg" width="200px" className='photo'/>
+        <img alt='education' src="education.jpeg" width="200px" className='photo' />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import './cv_section.css';
 import React, { useState } from 'react';
 
 function Experience() {
-  const [hiddenStyle, setHiddenStyle] = useState({ display: 'none', color: 'white' });
+  const [isHoverOn, setIsHoverOn] = useState(-1);
   const experienceData = [
     {
       companyName: "HAVELSAN",
@@ -47,38 +47,30 @@ function Experience() {
       description: [" Developing web application (PHP, Apache, MySQL, HTML/CSS)"]
     }
   ]
+
   return (
     <div className="cv_section">
       <div>
-        {experienceData.map(data =>
+        {experienceData.map((data, index) =>
           <>
-            <p className='title'>
+            <p className='title' onMouseEnter={() => {
+              setIsHoverOn(index);
+            }}
+              onMouseLeave={() => {
+                setIsHoverOn(-1);
+              }}>
               {data.companyName}
             </p>
+            <p className='text'>
+              {data.position} --- {data.date}
+            </p>
             {data.description.map(oneTask =>
-              <p className='text'>
+              <p className='text' style={isHoverOn === index ? { display: "block" } : { display: "none" }}>
                 {oneTask}
               </p>
             )}
           </>
         )}
-        <p className='title' onMouseEnter={e => {
-          setHiddenStyle({ display: 'block', color: 'white' });
-        }}
-          onMouseLeave={e => {
-            setHiddenStyle({ display: 'none', color: 'white' })
-          }}>
-          HAVELSAN
-        </p>
-        <p style={hiddenStyle}>
-          02.2022 – ongoing
-        </p>
-        <p className='text'>
-          Maintaining large Java project (debugging and analysis)
-        </p>
-        <p className='text'>
-          Developing front-end application with ReactJS
-        </p>
       </div>
       <div className='photoArea'>
         <img alt='experience' src="experience.jpg" width="200px" className='photo' />

@@ -5,7 +5,6 @@ import About from './CV_components/about.js';
 import Experience from './CV_components/experience';
 import Education from './CV_components/education';
 import SoftwareSkills from './CV_components/software_skills';
-import TestScores from './CV_components/test_scores';
 import Contacts from './CV_components/contacts.js';
 
 
@@ -25,7 +24,6 @@ function CV() {
           'Experience': <Experience />,
           'Education': <Education />,
           'SoftwareSkills': <SoftwareSkills />,
-          'TestScores': <TestScores />
         }[selectedTab]
       }
       <Contacts />

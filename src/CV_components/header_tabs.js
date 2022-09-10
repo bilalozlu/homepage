@@ -20,9 +20,6 @@ function HeaderTabs(props) {
         <button onClick = {() => props.func('SoftwareSkills')} className={`headTab ${props.selected === 'SoftwareSkills' ? "selected" : ''}`}>
           Software Skills
         </button>
-        <button onClick = {() => props.func('TestScores')} className={`headTab ${props.selected === 'TestScores' ? "selected" : ''}`}>
-          Test Scores
-        </button>
       </div>
       <div className='mail'>
         <p>bilal.ozlu@outlook.com</p>

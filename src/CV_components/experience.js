@@ -66,7 +66,7 @@ function Experience() {
             </p>
             {data.description.map(oneTask =>
               <p className='text' style={isHoverOn === index ? { display: "block" } : { display: "none" }}>
-                {oneTask}
+                {'\u2022'} {oneTask}
               </p>
             )}
           </>

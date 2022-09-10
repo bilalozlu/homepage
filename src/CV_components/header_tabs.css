@@ -42,10 +42,24 @@
 
 .headTab:hover {
     border: 5px teal solid;
-    border-top:  none;
+    border-top: none;
 }
 
 .headTab.selected {
     border: 5px navy solid;
-    border-top:  none;
+    border-top: none;
+}
+
+@media only screen and (max-width: 960px) {
+    .tabs {
+        width: 100%;
+    }
+
+    .name {
+        width: 0;
+    }
+
+    .mail {
+        width: 0;
+    }
 }

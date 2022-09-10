@@ -22,8 +22,8 @@ function CV() {
         {
           'About': <About />,
           'Experience': <Experience />,
-          'Education': <Education />,
           'SoftwareSkills': <SoftwareSkills />,
+          'Education': <Education />
         }[selectedTab]
       }
       <Contacts />

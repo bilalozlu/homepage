@@ -19,11 +19,10 @@
     position: fixed;
     top: 150px;
     right: 150px;
-    border-radius: 5%;
 }
 
 .photo {
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .jobHeader {

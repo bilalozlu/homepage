@@ -53,13 +53,14 @@ function Experience() {
       <div>
         {experienceData.map((data, index) =>
           <>
-            <div className='jobHeader'>
-              <p className='title' onMouseEnter={() => {
+            <div className='jobHeader'
+              onMouseEnter={() => {
                 setIsHoverOn(index);
               }}
-                onMouseLeave={() => {
-                  setIsHoverOn(-1);
-                }}>
+              onMouseLeave={() => {
+                setIsHoverOn(-1);
+              }}>
+              <p className='title'>
                 {data.companyName}
               </p>
               <p className='text'>

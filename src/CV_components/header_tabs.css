@@ -9,18 +9,12 @@
 
 .name {
     min-width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-satrt;
     font-size: 20px;
     color: white;
 }
 
 .mail {
     min-width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     margin: 5px;
     font-size: 12px;
     color: white;

@@ -8,10 +8,10 @@ function App() {
         <h2>
           Bilal ÖZLÜ
         </h2>
+        <Link to={"./CV"}>Portfolio</Link>
         <a href="BilalOzlu_CV.pdf">
           Resume
         </a>
-        <Link to={"./CV"}>Portfolio</Link>
         <Link to={"./projects"}>Projects</Link>
         <a href="/">
           Blogs (coming soon)
@@ -19,9 +19,10 @@ function App() {
       </header>
       <footer>
         <p>
-          Burası benim tarlam bilader!
+          Welcome to my land, fellow
         </p>
         <img alt="scarecrow" src="korkuluk.png" width="100px" />
+        <p className='copyright'>Designed and developed by Bilal ÖZLÜ {'\u00a9'} 2022</p>
       </footer>
     </div>
   );

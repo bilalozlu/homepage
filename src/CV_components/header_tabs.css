@@ -56,10 +56,10 @@
     }
 
     .name {
-        width: 0;
+        display: none;
     }
 
     .mail {
-        width: 0;
+        display: none;
     }
 }

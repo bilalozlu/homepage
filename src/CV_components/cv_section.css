@@ -24,3 +24,9 @@
 .photo {
     border-radius: 10%;
 }
+
+@media only screen and (max-width: 960px) {
+    .photoArea {
+        display: none;
+    }
+  }

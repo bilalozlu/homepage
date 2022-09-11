@@ -54,7 +54,7 @@ function SoftwareSkills() {
     },
     {
       skillName: "MySQL",
-      description: ["No experience in industry", "Mostly used in college"]
+      description: ["2 months of experience in industry", "Mostly used in college"]
     }
   ]
 

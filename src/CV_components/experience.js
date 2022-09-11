@@ -53,22 +53,20 @@ function Experience() {
       <div>
         {experienceData.map((data, index) =>
           <>
-            <div className='jobHeader'
+            <p className='title'
               onMouseEnter={() => {
                 setIsHoverOn(index);
               }}
               onMouseLeave={() => {
                 setIsHoverOn(-1);
               }}>
-              <p className='title'>
-                {data.companyName}
-              </p>
-              <p className='text'>
-                {data.position} --- {data.date}
-              </p>
-            </div>
+              {data.companyName}
+            </p>
+            <p className='jobDetail'>
+              {data.position} --- {data.date}
+            </p>
             {data.description.map(oneJob =>
-              <p className='text' style={isHoverOn === index ? { display: "block" } : { display: "none" }}>
+              <p className={`description ${isHoverOn === index ? 'show' : 'hide'}`}>
                 {'\u2022'} {oneJob}
               </p>
             )}

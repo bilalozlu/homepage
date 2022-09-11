@@ -7,7 +7,7 @@ function Education() {
         <p className='title'>
           ODTÜ - Computer Engineering
         </p>
-        <p className='text'>
+        <p className='description'>
           2020
         </p>
       </div>

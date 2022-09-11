@@ -7,16 +7,16 @@ function About() {
         <p className='title'>
           Bilal Özlü
         </p>
-        <p className='text'>
+        <p className='description'>
           A software engineer specialized on React & JS
         </p>
-        <p className='text'>
+        <p className='description'>
           loves to code
         </p>
-        <p className='text'>
+        <p className='description'>
           eager to learn
         </p>
-        <p className='text'>
+        <p className='description'>
           excited to implement new ideas
         </p>
       </div>

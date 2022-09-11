@@ -72,7 +72,7 @@ function SoftwareSkills() {
               {data.skillName}
             </p>
             {data.description.map(oneSkill =>
-              <p className='text' style={isHoverOn === index ? { display: "block" } : { display: "none" }}>
+              <p className={`description ${isHoverOn === index ? 'show' : 'hide'}`}>
                 {'\u2022'} {oneSkill}
               </p>
             )}

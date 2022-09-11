@@ -9,40 +9,64 @@
 
 .name {
     min-width: 10%;
-    font-size: 20px;
-    color: white;
+    font-size: 24px;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    background-color: gray;
+}
+
+.name.roundy {
+    border-radius: 0 0 25px 0;
 }
 
 .mail {
     min-width: 10%;
-    margin: 5px;
     font-size: 12px;
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aqua;
+    background-color: gray;
+}
+
+.mail.roundy {
+    border-radius: 0 0 0 25px;
 }
 
 .tabs {
     width: 80%;
+    background: linear-gradient(gray 50%, #282c34 50%) no-repeat;
 }
 
 .headTab {
     height: 100%;
     width: 25%;
-    font-size: 24px;
     border: none;
+    font-size: 24px;
     cursor: pointer;
-    background-color: #282c34;
     color: white;
+    background-color: gray;
 }
 
 .headTab:hover {
-    border: 5px teal solid;
-    border-top: none;
+    background-color: black;
 }
 
-.headTab.selected {
-    border: 5px navy solid;
-    border-top: none;
+.about.About, .experience.Experience, .softwareskills.SoftwareSkills, .education.Education {
+    background-color: #282c34;
+    border-radius: 25px 25px 0 0;
 }
+
+.about.Experience, .experience.SoftwareSkills, .softwareskills.Education {
+    border-radius: 0 0 25px 0;
+}
+
+.experience.About, .softwareskills.Experience, .education.SoftwareSkills {
+    border-radius: 0 0 0 25px;
+}
+
 
 @media only screen and (max-width: 960px) {
     .tabs {

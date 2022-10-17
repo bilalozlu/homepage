@@ -8,8 +8,8 @@ function App() {
         <h2>
           Bilal ÖZLÜ
         </h2>
-        <Link to={"./CV"}>Portfolio</Link>
-        <a href="BilalOzlu_CV.pdf">
+        <Link to={"./portfolio"}>Portfolio</Link>
+        <a href="BilalOzlu_resume.pdf">
           Resume
         </a>
         <Link to={"./projects"}>Projects</Link>

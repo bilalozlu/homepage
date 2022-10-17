@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import './CV.css';
-import HeaderTabs from './CV_components/header_tabs.js';
-import About from './CV_components/about.js';
-import Experience from './CV_components/experience';
-import Education from './CV_components/education';
-import SoftwareSkills from './CV_components/software_skills';
-import Contacts from './CV_components/contacts.js';
+import './portfolio.css';
+import HeaderTabs from './portfolio_components/header_tabs.js';
+import About from './portfolio_components/about.js';
+import Experience from './portfolio_components/experience';
+import Education from './portfolio_components/education';
+import SoftwareSkills from './portfolio_components/software_skills';
+import Contacts from './portfolio_components/contacts.js';
 
 
-function CV() {
+function Portfolio() {
   const [selectedTab, setSelectedTab] = useState('About');
 
   function handleSelect(chosen) {
@@ -16,7 +16,7 @@ function CV() {
   };
 
   return (
-    <div className='cv'>
+    <div className='portfolio'>
       <HeaderTabs func={handleSelect} selected={selectedTab} />
       {
         {
@@ -31,4 +31,4 @@ function CV() {
   );
 }
 
-export default CV;
+export default Portfolio;

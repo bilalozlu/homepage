@@ -1,4 +1,4 @@
-import './cv_section.css';
+import './portfolio_section.css';
 import React, { useState } from 'react';
 
 function SoftwareSkills() {
@@ -59,7 +59,7 @@ function SoftwareSkills() {
   ]
 
   return (
-    <div className="cv_section">
+    <div className="portfolio_section">
       <div>
         {skillData.map((data, index) =>
           <>

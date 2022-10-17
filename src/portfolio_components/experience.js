@@ -1,4 +1,4 @@
-import './cv_section.css';
+import './portfolio_section.css';
 import React, { useState } from 'react';
 
 function Experience() {
@@ -49,7 +49,7 @@ function Experience() {
   ]
 
   return (
-    <div className="cv_section">
+    <div className="portfolio_section">
       <div>
         {experienceData.map((data, index) =>
           <>

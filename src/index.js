@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import './index.css';
 import App from './App';
-import CV from './CV';
+import Portfolio from './portfolio';
 import Projects from './projects';
 
 import reportWebVitals from './reportWebVitals';
@@ -14,7 +14,7 @@ root.render(
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<App/>}/>
-          <Route path="/CV" element={<CV/>}/>
+          <Route path="/portfolio" element={<Portfolio/>}/>
           <Route path="/projects" element={<Projects/>}/>
         </Routes>
     </BrowserRouter>

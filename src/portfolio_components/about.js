@@ -1,8 +1,8 @@
-import './cv_section.css';
+import './portfolio_section.css';
 
 function About() {
   return (
-    <div className="cv_section">
+    <div className="portfolio_section">
       <div>
         <p className='title'>
           Bilal Özlü

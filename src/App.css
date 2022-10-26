@@ -3,39 +3,80 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #282c34;
+  background-image: url('../public/bg_santa.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
 }
 
 header {
-  min-height: 50vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #104020;
 }
 
 footer {
-  min-height: 50vh;
+  min-height: 40vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+
+h1 {
+  font-family: monospace;
 }
 
 a{
-  color: white;
+  color: #104020;
   text-decoration: none;
+  margin-bottom: 10px;
 }
+
 a:hover {
-  color: teal;
+  color: #30b060;
 }
 
 .copyright {
-  font-size: 10px;
+  font-size: 8px;
   position: absolute;
   bottom: 0px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 40vw;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.link {
+  opacity: 0.8;
+}
+
+.link:hover {
+  opacity: 1;
+}
+
+.link img:last-child {
+  display: none;
+}
+
+.link:hover img:last-child {
+  display: block;
+}
+
+.link:hover img:first-child{
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .links {
+    width: 60vw;
+  }
 }

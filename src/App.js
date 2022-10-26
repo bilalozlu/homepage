@@ -8,12 +8,15 @@ function App() {
         <h1>
           Bilal ÖZLÜ
         </h1>
-        <Link to={"./portfolio"}>Portfolio</Link>
-        <a href="BilalOzlu_resume.pdf">
-          Resume
-        </a>
-        <Link to={"./projects"}>Projects</Link>
-        <div className='links'>
+        <div className='links1'>
+
+          <Link to={"./portfolio"}>Portfolio</Link>
+          <a href="BilalOzlu_resume.pdf">
+            Resume
+          </a>
+          <Link to={"./projects"}>Projects</Link>
+        </div>
+        <div className='links2'>
           <a className="link" href="https://www.linkedin.com/in/bilalozlu/">
             <img src="linkedin_bw.png" alt="linkedin" width="40px" />
             <img src="linkedin.png" alt="linkedin" width="40px" />
@@ -27,7 +30,6 @@ function App() {
             <img src="hackerrank.png" alt="hackerrank" width="40px" />
           </a>
         </div>
-
       </header>
       <footer>
         <p className='copyright'>Designed & developed & photographed by Bilal ÖZLÜ {'\u00a9'} 2022</p>

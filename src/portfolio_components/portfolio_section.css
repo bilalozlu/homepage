@@ -1,24 +1,30 @@
 .portfolio_section {
-    margin: 100px 40px 40px 80px;
-    background-color: #282c34;
+    width: 80vw;
+    background-color: #eee;
+    display: flex;
+}
+
+.job {
     display: flex;
 }
 
 .title {
     font-size: 32px;
     margin-right: 10px;
-    color: aqua;
+    color: #104020;
     margin-bottom: 0;
 }
 
 .jobDetail {
     font-size: 16px;
-    color: mediumaquamarine;
+    color: #30b060;
+    margin-bottom: 8px;
+    align-self: flex-end;
 }
 
 .description {
     font-size: 20px;
-    color: azure;
+    color: #104020;
 }
 
 .description.hide {

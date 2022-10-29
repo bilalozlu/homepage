@@ -17,8 +17,8 @@ function SoftwareSkills() {
     },
     {
       skillName: "Java",
-      description: ["Limited industry experience", "Mostly used in college", "Knowledge of OOP & Clean Code",
-        "Familiar with development environment", "Familiar with design patterns"]
+      description: ["1 year of experience in industry", "Knowledge of OOP & Clean Code", "Familiar with development environment",
+       "Familiar with design patterns"]
     },
     {
       skillName: "C / C++",

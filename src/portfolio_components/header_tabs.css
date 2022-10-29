@@ -1,83 +1,53 @@
 .header_tabs {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: inline-flex;
-    height: 75px;
-    background-color: #282c34;
+    width: 20vw;
+    min-height: 100%;
+    background-image: url('../../public/bg_sumela.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
 }
 
 .name {
-    min-width: 10%;
-    font-size: 24px;
-    font-family: cursive;
-    display: flex;
-    justify-content: center;
-    color: aqua;
-    background-color: gray;
-}
-
-.name.roundy {
-    border-radius: 0 0 25px 0;
+        width: 20vw;
+    color: #eee;
+    text-align: center;
 }
 
 .mail {
-    min-width: 10%;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: aqua;
-    background-color: gray;
+    width: 20vw;
+    color: #eee;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
 }
 
-.mail.roundy {
-    border-radius: 0 0 0 25px;
-}
 
 .tabs {
-    width: 80%;
-    background: linear-gradient(gray 50%, #282c34 50%) no-repeat;
+    width: 100%;
 }
 
 .headTab {
-    height: 100%;
-    width: 25%;
+    height: 40px;
+    width: 90%;
+    margin-left: 10%;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
+    background-color: transparent;
     cursor: pointer;
-    color: white;
-    background-color: gray;
+    color: #eee;
 }
 
+.headTab.selected {
+    background-color: #eee;
+    color: #104020;
+    border-radius: 20px 0 0 20px;
+}
 .headTab:hover {
-    background-color: black;
-}
-
-.about.About, .experience.Experience, .softwareskills.SoftwareSkills, .education.Education {
-    background-color: #282c34;
-    border-radius: 25px 25px 0 0;
-}
-
-.about.Experience, .experience.SoftwareSkills, .softwareskills.Education {
-    border-radius: 0 0 25px 0;
-}
-
-.experience.About, .softwareskills.Experience, .education.SoftwareSkills {
-    border-radius: 0 0 0 25px;
+    background-color: #eee;
+    color: #104020;
+    border-radius: 20px 0 0 20px;
 }
 
 
 @media only screen and (max-width: 960px) {
-    .tabs {
-        width: 100%;
-    }
-
-    .name {
-        display: none;
-    }
-
-    .mail {
-        display: none;
-    }
 }

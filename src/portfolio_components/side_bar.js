@@ -1,9 +1,9 @@
-import './header_tabs.css';
+import './side_bar.css';
 
-function HeaderTabs(props) {
+function SideBar(props) {
 
   return (
-    <div className='header_tabs'>
+    <div className='side_bar'>
       <div className='name'>
         <p>B.Ö.</p>
       </div>
@@ -28,4 +28,4 @@ function HeaderTabs(props) {
   );
 }
 
-export default HeaderTabs;
+export default SideBar;

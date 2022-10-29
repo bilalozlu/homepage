@@ -1,5 +1,6 @@
 .portfolio_section {
     width: 80vw;
+    margin: 20px;
     background-color: #eee;
     display: flex;
 }
@@ -18,7 +19,7 @@
 .jobDetail {
     font-size: 16px;
     color: #30b060;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     align-self: flex-end;
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './portfolio.css';
-import HeaderTabs from './portfolio_components/header_tabs.js';
+import SideBar from './portfolio_components/side_bar.js';
 import About from './portfolio_components/about.js';
 import Experience from './portfolio_components/experience';
 import Education from './portfolio_components/education';
@@ -17,7 +17,7 @@ function Portfolio() {
 
   return (
     <div className='portfolio'>
-      <HeaderTabs func={handleSelect} selected={selectedTab} />
+      <SideBar func={handleSelect} selected={selectedTab} />
       {
         {
           'About': <About />,

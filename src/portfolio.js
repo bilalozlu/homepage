@@ -13,19 +13,46 @@ function Portfolio() {
 
   function handleSelect(chosen) {
     setSelectedTab(chosen);
+    goToSelectedTab(chosen);
+  };
+
+  function goToSelectedTab(chosen) {
+    let verticalDistance;
+    switch (chosen) {
+      case 'About':
+        verticalDistance = 0;
+        break;
+      case 'Experience':
+        verticalDistance = 1;
+        break;
+      case 'SoftwareSkills':
+        verticalDistance = 2;
+        break;
+      case 'Education':
+        verticalDistance = 3;
+        break;
+      default:
+        verticalDistance = 0;
+        break;
+    }
+    window.scrollTo({
+      top: window.innerHeight*verticalDistance,
+      behavior: "smooth",
+    });
   };
 
   return (
     <div className='portfolio'>
       <SideBar func={handleSelect} selected={selectedTab} />
-      {
-        {
-          'About': <About />,
-          'Experience': <Experience />,
-          'SoftwareSkills': <SoftwareSkills />,
-          'Education': <Education />
-        }[selectedTab]
-      }
+      <div className="portfolio_section">
+        <About />
+        <hr />
+        <Experience />
+        <hr />
+        <SoftwareSkills />
+        <hr />
+        <Education />
+      </div>
       <Contacts />
     </div>
   );

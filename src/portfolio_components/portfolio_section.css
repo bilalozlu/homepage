@@ -1,10 +1,3 @@
-.portfolio_section {
-    width: 80vw;
-    margin: 20px;
-    background-color: #eee;
-    display: flex;
-}
-
 .job {
     display: flex;
 }
@@ -35,22 +28,6 @@
 .description.show {
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
-}
-
-.photoArea {
-    position: fixed;
-    top: 150px;
-    right: 150px;
-}
-
-.photo {
-    border-radius: 10px;
-}
-
-@media only screen and (max-width: 960px) {
-    .photoArea {
-        display: none;
-    }
 }
 
 @-webkit-keyframes fadeIn {

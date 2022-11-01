@@ -1,6 +1,6 @@
 .side_bar {
-    width: 25vw;
     height: 100vh;
+    max-width: 25%;
     top: 0;
     position: sticky;
     background-image: url('../../public/bg_sumela.jpeg');
@@ -9,17 +9,19 @@
     opacity: 0.9;
 }
 
-.name {
+.profile {
+    width: 100%;
     text-align: center;
-    margin: 20px;
+    margin: 20px 0px;
 }
 
-.name img {
+.profile img {
+    border: 1px solid #eee;
     border-radius: 50%;
 }
 
 .mail {
-    width: 25vw;
+    width: 100%;
     color: #eee;
     position: absolute;
     bottom: 0;
@@ -30,8 +32,8 @@
     width: 100%;
 }
 
-.headTab {
-    height: 40px;
+.sideTab {
+    min-height: 40px;
     width: 90%;
     margin-left: 10%;
     margin-top: 10px;
@@ -42,7 +44,8 @@
     color: #eee;
 }
 
-.headTab.selected, .headTab:hover {
+.sideTab.selected,
+.sideTab:hover {
     background-color: #eee;
     color: #104020;
     border-radius: 20px 0 0 20px;
@@ -50,4 +53,7 @@
 
 
 @media only screen and (max-width: 960px) {
+    .side_bar {
+        max-width: 33%;
+    }
 }

@@ -4,20 +4,20 @@ function SideBar(props) {
 
   return (
     <div className='side_bar'>
-      <div className='name'>
+      <div className='profile'>
         <img src="profile.jpeg" alt="profile" width="100px" />
       </div>
       <div className='tabs'>
-        <button onClick={() => props.func('About')} className={`headTab ${props.selected === 'About' && 'selected'}`}>
+        <button onClick={() => props.func('About')} className={`sideTab ${props.selected === 'About' && 'selected'}`}>
           About
         </button>
-        <button onClick={() => props.func('Experience')} className={`headTab ${props.selected === 'Experience' && 'selected'}`}>
+        <button onClick={() => props.func('Experience')} className={`sideTab ${props.selected === 'Experience' && 'selected'}`}>
           Experience
         </button>
-        <button onClick={() => props.func('SoftwareSkills')} className={`headTab ${props.selected === 'SoftwareSkills' && 'selected'}`}>
+        <button onClick={() => props.func('SoftwareSkills')} className={`sideTab ${props.selected === 'SoftwareSkills' && 'selected'}`}>
           Software Skills
         </button>
-        <button onClick={() => props.func('Education')} className={`headTab ${props.selected === 'Education' && 'selected'}`}>
+        <button onClick={() => props.func('Education')} className={`sideTab ${props.selected === 'Education' && 'selected'}`}>
           Education
         </button>
       </div>

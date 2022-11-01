@@ -49,7 +49,7 @@ function Experience() {
   ]
 
   return (
-    <div className="portfolio_section">
+    <>
       <div>
         {experienceData.map((data, index) =>
           <>
@@ -75,10 +75,7 @@ function Experience() {
           </>
         )}
       </div>
-      <div className='photoArea'>
-        <img alt='experience' src="experience.jpg" width="200px" className='photo' />
-      </div>
-    </div>
+    </>
   );
 }
 

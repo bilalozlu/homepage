@@ -59,7 +59,7 @@ function SoftwareSkills() {
   ]
 
   return (
-    <div className="portfolio_section">
+    <>
       <div>
         {skillData.map((data, index) =>
           <>
@@ -79,10 +79,7 @@ function SoftwareSkills() {
           </>
         )}
       </div>
-      <div className='photoArea'>
-        <img alt='skills' src="skills.jpg" width="200px" className='photo' />
-      </div>
-    </div>
+    </>
   );
 }
 

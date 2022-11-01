@@ -5,7 +5,7 @@ function SideBar(props) {
   return (
     <div className='side_bar'>
       <div className='name'>
-        <p>B.Ö.</p>
+        <img src="profile.jpeg" alt="profile" width="100px" />
       </div>
       <div className='tabs'>
         <button onClick={() => props.func('About')} className={`headTab ${props.selected === 'About' && 'selected'}`}>
@@ -22,7 +22,7 @@ function SideBar(props) {
         </button>
       </div>
       <div className='mail'>
-        <p>bilal.ozlu@outlook.com</p>
+        <p>{'\u2709'} bilal.ozlu@outlook.com</p>
       </div>
     </div>
   );

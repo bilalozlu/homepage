@@ -19,13 +19,13 @@ function Contacts() {
       </button>
       <div className={`contacts ${!isContactsOpen && 'closed'}`}>
         <a className="contact_link" href="https://www.linkedin.com/in/bilalozlu/">
-          <img src="linkedin.png" alt="linkedin" width="40px" />
+          <img src="linkedin.png" alt="linkedin" width="36px" />
         </a>
         <a className="contact_link" href="https://github.com/bilalozlu/">
-          <img src="github.png" alt="github" width="40px" />
+          <img src="github.png" alt="github" width="36px" />
         </a>
         <a className="contact_link" href="https://www.hackerrank.com/bilalozlu/">
-          <img src="hackerrank.png" alt="hackerrank" width="40px" />
+          <img src="hackerrank.png" alt="hackerrank" width="36px" />
         </a>
       </div>
     </div >

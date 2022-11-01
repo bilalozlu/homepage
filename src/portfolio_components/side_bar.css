@@ -10,13 +10,16 @@
 }
 
 .name {
-    width: 20vw;
-    color: #eee;
     text-align: center;
+    margin: 20px;
+}
+
+.name img {
+    border-radius: 50%;
 }
 
 .mail {
-    width: 20vw;
+    width: 25vw;
     color: #eee;
     position: absolute;
     bottom: 0;
@@ -31,7 +34,7 @@
     height: 40px;
     width: 90%;
     margin-left: 10%;
-    margin-top: 8px;
+    margin-top: 10px;
     border: none;
     font-size: 20px;
     background-color: transparent;
@@ -39,12 +42,7 @@
     color: #eee;
 }
 
-.headTab.selected {
-    background-color: #eee;
-    color: #104020;
-    border-radius: 20px 0 0 20px;
-}
-.headTab:hover {
+.headTab.selected, .headTab:hover {
     background-color: #eee;
     color: #104020;
     border-radius: 20px 0 0 20px;

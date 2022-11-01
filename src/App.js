@@ -9,7 +9,6 @@ function App() {
           Bilal ÖZLÜ
         </h1>
         <div className='links1'>
-
           <Link to={"./portfolio"}>Portfolio</Link>
           <a href="BilalOzlu_resume.pdf">
             Resume

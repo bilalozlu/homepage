@@ -2,7 +2,7 @@ import './portfolio_section.css';
 
 function About() {
   return (
-    <>
+    <div className="portfolio_section">
       <div>
         <p className='title'>
           Bilal Özlü
@@ -20,7 +20,7 @@ function About() {
           excited to implement new ideas
         </p>
       </div>
-    </>
+    </div>
   );
 }
 

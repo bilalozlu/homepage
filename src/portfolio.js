@@ -44,13 +44,10 @@ function Portfolio() {
   return (
     <div className='portfolio'>
       <SideBar func={handleSelect} selected={selectedTab} />
-      <div className="portfolio_section">
+      <div className="portfolio_sections">
         <About />
-        <hr />
         <Experience />
-        <hr />
         <SoftwareSkills />
-        <hr />
         <Education />
       </div>
       <Contacts />

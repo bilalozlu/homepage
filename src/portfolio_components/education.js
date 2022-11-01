@@ -2,7 +2,7 @@ import './portfolio_section.css';
 
 function Education() {
   return (
-    <>
+    <div className="portfolio_section">
       <div>
         <p className='title'>
           ODTÜ - Computer Engineering
@@ -11,7 +11,7 @@ function Education() {
           2020
         </p>
       </div>
-    </>
+    </div>
   );
 }
 

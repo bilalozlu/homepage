@@ -49,7 +49,7 @@ function Experience() {
   ]
 
   return (
-    <>
+    <div className="portfolio_section">
       <div>
         {experienceData.map((data, index) =>
           <>
@@ -75,7 +75,7 @@ function Experience() {
           </>
         )}
       </div>
-    </>
+    </div>
   );
 }
 

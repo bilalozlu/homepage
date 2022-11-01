@@ -18,7 +18,7 @@ function SoftwareSkills() {
     {
       skillName: "Java",
       description: ["1 year of experience in industry", "Knowledge of OOP & Clean Code", "Familiar with development environment",
-       "Familiar with design patterns"]
+        "Familiar with design patterns"]
     },
     {
       skillName: "C / C++",
@@ -59,7 +59,7 @@ function SoftwareSkills() {
   ]
 
   return (
-    <>
+    <div className="portfolio_section">
       <div>
         {skillData.map((data, index) =>
           <>
@@ -79,7 +79,7 @@ function SoftwareSkills() {
           </>
         )}
       </div>
-    </>
+    </div>
   );
 }
 

@@ -1,3 +1,10 @@
+.portfolio_section {
+    min-height: 100vh;
+    margin: 0 30px;
+    background-color: #eee;
+    display: flex;
+}
+
 .job {
     display: flex;
 }
@@ -29,6 +36,7 @@
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
 }
+
 
 @-webkit-keyframes fadeIn {
     from {

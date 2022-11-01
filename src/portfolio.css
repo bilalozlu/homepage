@@ -1,12 +1,11 @@
 .portfolio {
     display: flex;
     width: 100%;
-    min-height: 100%;
     position: absolute;
     background-color: #eee;
 }
 
-.portfolio_section {
-    margin: 20px;
+.portfolio_sections {
+    width: 75vh;
     background-color: #eee;
 }

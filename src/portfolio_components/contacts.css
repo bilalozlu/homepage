@@ -1,43 +1,43 @@
 .contactsArea {
+    display: flex;
+    align-items: center;
     position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 50%;
+    right: 0;
 }
 
 .arrow {
-    background-color: cadetblue;
-    color: white;
-    margin-left: 60px;
-    height: 40px;
-    width: 60px;
+    background-color: #103020;
+    opacity: 0.9;
+    color: #eee;
+    height: 50px;
+    width: 40px;
     font-size: 24px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 0 0 10px;
     border: none;
     cursor: pointer;
 }
 
 .arrow:hover {
-    border: 3px teal solid;
+    border: 3px #30b060 solid;
 }
 
 .contacts {
-    display: flex;
-    justify-content: space-around;
-    background-color: cadetblue;
-    width: 180px;
-    height: 50px;
-    border-radius: 10px 10px 0 0;
-    -webkit-transition: height 1s ease-in-out;
-    transition: height 1s ease-in-out;
+    display: grid;
+    background-color: #103020;
+    opacity: 0.9;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+    -webkit-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 
 .contact_link {
-    margin: 5px;
+    margin: 6px;
 }
 
 .contacts.closed {
-    height: 0px;
+    width: 0px;
 }
 
 @media only screen and (max-width: 960px) {

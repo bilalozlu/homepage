@@ -12,9 +12,9 @@ function Contacts() {
     <div className='contactsArea'>
       <button className='arrow' onClick={() => toggleContacts()}>
         {isContactsOpen ?
-          '\u02C5'
+          '>'
           :
-          '\u02C4'
+          '<'
         }
       </button>
       <div className={`contacts ${!isContactsOpen && 'closed'}`}>

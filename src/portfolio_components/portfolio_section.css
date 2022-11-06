@@ -1,5 +1,5 @@
 .portfolio_section {
-    min-height: 100vh;
+    height: 100vh;
     margin: 0 30px;
     background-color: #eee;
     display: flex;
@@ -10,10 +10,11 @@
 }
 
 .title {
-    font-size: 32px;
+    font-size: 24px;
     margin-right: 10px;
     color: #104020;
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 .jobDetail {
@@ -26,6 +27,7 @@
 .description {
     font-size: 20px;
     color: #104020;
+    margin-bottom: 6px;
 }
 
 .description.hide {

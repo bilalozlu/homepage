@@ -12,27 +12,27 @@ function Portfolio() {
   const [selectedTab, setSelectedTab] = useState('About');
 
   const handleScroll = () => {
-      const position = window.pageYOffset;
-      if(position < window.innerHeight){
-        setSelectedTab('About');
-      }
-      else if (position < window.innerHeight*2) {
-        setSelectedTab('Experience');
-      }
-      else if (position < window.innerHeight*3) {
-        setSelectedTab('SoftwareSkills');
-      }
-      else {
-        setSelectedTab('Education');
-      }
+    const position = window.pageYOffset;
+    if (position < window.innerHeight * 0.9) {
+      setSelectedTab('About');
+    }
+    else if (position < window.innerHeight * 1.9) {
+      setSelectedTab('Experience');
+    }
+    else if (position < window.innerHeight * 2.9) {
+      setSelectedTab('SoftwareSkills');
+    }
+    else {
+      setSelectedTab('Education');
+    }
   };
-  
+
   useEffect(() => {
-      window.addEventListener('scroll', handleScroll, { passive: true });
-  
-      return () => {
-          window.removeEventListener('scroll', handleScroll);
-      };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   function handleSelect(chosen) {
@@ -55,7 +55,7 @@ function Portfolio() {
         break;
     }
     window.scrollTo({
-      top: window.innerHeight*verticalDistance,
+      top: window.innerHeight * verticalDistance,
       behavior: "smooth",
     });
   };
@@ -65,8 +65,11 @@ function Portfolio() {
       <SideBar func={handleSelect} selected={selectedTab} />
       <div>
         <About />
+        <hr />
         <Experience />
+        <hr />
         <SoftwareSkills />
+        <hr />
         <Education />
       </div>
       <Contacts />

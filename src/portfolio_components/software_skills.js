@@ -41,15 +41,7 @@ function SoftwareSkills() {
       description: ["No experience in industry", "Mostly used in college"]
     },
     {
-      skillName: "Haskell",
-      description: ["No experience in industry", "Mostly used in college"]
-    },
-    {
       skillName: "NoSQL",
-      description: ["No experience in industry", "Used for several small projects"]
-    },
-    {
-      skillName: "MongoDB",
       description: ["No experience in industry", "Used for several small projects"]
     },
     {

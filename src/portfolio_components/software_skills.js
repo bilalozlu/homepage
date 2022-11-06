@@ -55,14 +55,17 @@ function SoftwareSkills() {
       <div>
         {skillData.map((data, index) =>
           <>
-            <p className='title' onMouseEnter={() => {
-              setIsHoverOn(index);
-            }}
+            <div className='title'
+              onMouseEnter={() => {
+                setIsHoverOn(index);
+              }}
               onMouseLeave={() => {
                 setIsHoverOn(-1);
               }}>
-              {data.skillName}
-            </p>
+              <p className='titleText'>
+                {data.skillName}
+              </p>
+            </div>
             {data.description.map(oneSkill =>
               <p className={`description ${isHoverOn === index ? 'show' : 'hide'}`}>
                 {'\u2022'} {oneSkill}

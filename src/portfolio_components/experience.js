@@ -37,13 +37,13 @@ function Experience() {
     {
       companyName: "Korona Software Solutions",
       date: "06 – 09.2018 (4 months)",
-      position: "(Summer Intern",
+      position: "Summer Intern",
       description: ["Developed mobile application with React Native"]
     },
     {
       companyName: "Piksel Bilişim",
       date: "08 – 09.2017 (2 months)",
-      position: "(Summer Intern",
+      position: "Summer Intern",
       description: ["Developed a complete web application (PHP, Apache, MySQL, HTML/CSS)"]
     }
   ]
@@ -53,18 +53,18 @@ function Experience() {
       <div>
         {experienceData.map((data, index) =>
           <>
-            <div className='job'
+            <div className='title'
               onMouseEnter={() => {
                 setIsHoverOn(index);
               }}
               onMouseLeave={() => {
                 setIsHoverOn(-1);
               }}>
-              <p className='title'>
+              <p className='titleText'>
                 {data.companyName}
               </p>
               <p className='jobDetail'>
-                {data.position} --- {data.date}
+                {data.position} | {data.date}
               </p>
             </div>
             {data.description.map(oneJob =>

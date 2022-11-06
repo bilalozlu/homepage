@@ -4,7 +4,7 @@ function About() {
   return (
     <div className="portfolio_section">
       <div>
-        <p className='title'>
+        <p className='titleText'>
           Bilal Özlü
         </p>
         <p className='description'>

@@ -5,11 +5,12 @@
     display: flex;
 }
 
-.job {
+.title {
+    cursor: pointer;
     display: flex;
 }
 
-.title {
+.titleText {
     font-size: 24px;
     margin-right: 10px;
     color: #104020;

@@ -4,7 +4,7 @@ function Education() {
   return (
     <div className="portfolio_section">
       <div>
-        <p className='title'>
+        <p className='titleText'>
           ODTÜ - Computer Engineering
         </p>
         <p className='description'>

@@ -5,16 +5,18 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>
-          Bilal ÖZLÜ
-        </h1>
         <div className='links1'>
           <Link to={"./portfolio"}>Portfolio</Link>
+          |
           <a href="BilalOzlu_resume.pdf">
             Resume
           </a>
+          |
           <Link to={"./projects"}>Projects</Link>
         </div>
+        <h1>
+          <Link to={"./portfolio"}>Bilal ÖZLÜ</Link>
+        </h1>
         <div className='links2'>
           <a className="link" href="https://www.linkedin.com/in/bilalozlu/">
             <img src="linkedin_bw.png" alt="linkedin" width="40px" />

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './portfolio.css';
 import SideBar from './portfolio_components/side_bar.js';
 import About from './portfolio_components/about.js';
@@ -11,12 +11,31 @@ import Contacts from './portfolio_components/contacts.js';
 function Portfolio() {
   const [selectedTab, setSelectedTab] = useState('About');
 
-  function handleSelect(chosen) {
-    setSelectedTab(chosen);
-    goToSelectedTab(chosen);
+  const handleScroll = () => {
+      const position = window.pageYOffset;
+      if(position < window.innerHeight){
+        setSelectedTab('About');
+      }
+      else if (position < window.innerHeight*2) {
+        setSelectedTab('Experience');
+      }
+      else if (position < window.innerHeight*3) {
+        setSelectedTab('SoftwareSkills');
+      }
+      else {
+        setSelectedTab('Education');
+      }
   };
+  
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+  
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
 
-  function goToSelectedTab(chosen) {
+  function handleSelect(chosen) {
     let verticalDistance;
     switch (chosen) {
       case 'About':

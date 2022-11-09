@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import Portfolio from './portfolio';
 import Projects from './projects';
+import Solutions from './solutions';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -16,6 +17,7 @@ root.render(
           <Route path="/" element={<App/>}/>
           <Route path="/portfolio" element={<Portfolio/>}/>
           <Route path="/projects" element={<Projects/>}/>
+          <Route path="/solutions" element={<Solutions/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>

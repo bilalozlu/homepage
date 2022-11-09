@@ -1,0 +1,18 @@
+.solutions {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background-color: #103020;
+    text-align: center;
+}
+
+.solutionsTitle {
+    color: #eee;
+    }
+
+.solutionsList {
+    margin: 20px 0;
+    width: 90%;
+    display: inline-grid;
+    background-color: #eee;
+}

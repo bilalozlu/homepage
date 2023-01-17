@@ -8,7 +8,7 @@ function Experience() {
       companyName: "HAVELSAN",
       date: "02.2022 – ongoing",
       position: "Full-time Software Engineer",
-      description: ["Maintaining large Java project (debugging and analysis)", "Developing front-end application with ReactJS"]
+      description: ["Developed a front-end application with ReactJS, runs on both desktop and browser, in order to modernize an old project ", "Worked with a team on a large Java & Spring project to fulfill the requirements for acceptance tests", "Managed software requirements on DOORS & JIRA"]
     },
     {
       companyName: "StartupHeroes",
@@ -32,7 +32,7 @@ function Experience() {
       companyName: "FAME CRYPT",
       date: "09 – 11.2019 (3 months)",
       position: "Part-time Software Engineer",
-      description: ["Implemented cryptographic algorithms with C++", "Developed a desktop application with Qt (C++)", "Company website with HTML/CSS"]
+      description: ["Implemented cryptographic algorithms with C++", "Developed desktop application with Qt (C++)", "Built company’s website with HTML/CSS"]
     },
     {
       companyName: "Korona Software Solutions",

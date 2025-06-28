@@ -1,17 +1,17 @@
-import './portfolio_section.css';
+import '../styles/main.scss';
 
 function Education() {
   return (
-    <div className="portfolio_section">
+    <section className="education" id="education">
       <div>
-        <p className='titleText'>
+        <p>
           ODTÜ - Computer Engineering
         </p>
         <p className='description'>
           2020
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -1,4 +1,4 @@
-import './portfolio_section.css';
+import '../styles/main.scss';
 import React, { useState } from 'react';
 
 function Experience() {
@@ -49,21 +49,21 @@ function Experience() {
   ]
 
   return (
-    <div className="portfolio_section">
+    <section className="experience" id="experience">
       <div>
         {experienceData.map((data, index) =>
           <>
-            <div className='title'
+            <div
               onMouseEnter={() => {
                 setIsHoverOn(index);
               }}
               onMouseLeave={() => {
                 setIsHoverOn(-1);
               }}>
-              <p className='titleText'>
+              <p>
                 {data.companyName}
               </p>
-              <p className='jobDetail'>
+              <p>
                 {data.position} | {data.date}
               </p>
             </div>
@@ -75,7 +75,7 @@ function Experience() {
           </>
         )}
       </div>
-    </div>
+    </section>
   );
 }
 

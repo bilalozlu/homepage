@@ -1,4 +1,4 @@
-import './portfolio_section.css';
+import '../styles/main.scss';
 import React, { useState } from 'react';
 
 function SoftwareSkills() {
@@ -51,18 +51,18 @@ function SoftwareSkills() {
   ]
 
   return (
-    <div className="portfolio_section">
+    <section className="skills" id="skills">
       <div>
         {skillData.map((data, index) =>
           <>
-            <div className='title'
+            <div
               onMouseEnter={() => {
                 setIsHoverOn(index);
               }}
               onMouseLeave={() => {
                 setIsHoverOn(-1);
               }}>
-              <p className='titleText'>
+              <p>
                 {data.skillName}
               </p>
             </div>
@@ -74,7 +74,7 @@ function SoftwareSkills() {
           </>
         )}
       </div>
-    </div>
+    </section>
   );
 }
 

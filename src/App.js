@@ -11,8 +11,6 @@ function App() {
           <a href="BilalOzlu_resume.pdf">
             Resume
           </a>
-          |
-          <Link to={"./projects"}>Projects</Link>
         </div>
         <h1>
           <Link to={"./portfolio"}>Bilal ÖZLÜ</Link>

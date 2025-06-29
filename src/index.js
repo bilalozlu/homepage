@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import './index.css';
 import App from './App';
-import Portfolio from './my-portfolio/page';
 import Solutions from './my-solutions/solutions';
 
 import reportWebVitals from './reportWebVitals';
@@ -14,7 +13,6 @@ root.render(
     <BrowserRouter>
         <Routes>
           <Route path="/" element={<App/>}/>
-          <Route path="/portfolio" element={<Portfolio/>}/>
           <Route path="/solutions" element={<Solutions/>}/>
         </Routes>
     </BrowserRouter>

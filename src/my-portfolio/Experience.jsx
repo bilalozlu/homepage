@@ -1,12 +1,17 @@
-import '../styles/main.scss';
 import React, { useState } from 'react';
 
 function Experience() {
   const [isHoverOn, setIsHoverOn] = useState(-1);
   const experienceData = [
     {
+      companyName: "Tubitak YTE",
+      date: "05.2023 – ongoing",
+      position: "Full-time Software Engineer",
+      description: []
+    },
+    {
       companyName: "HAVELSAN",
-      date: "02.2022 – ongoing",
+      date: "02.2022 – 05.2023",
       position: "Full-time Software Engineer",
       description: ["Developed a front-end application with ReactJS, runs on both desktop and browser, in order to modernize an old project ", "Worked with a team on a large Java & Spring project to fulfill the requirements for acceptance tests", "Managed software requirements on DOORS & JIRA"]
     },

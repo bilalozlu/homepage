@@ -1,5 +1,3 @@
-import '../styles/main.scss';
-
 function Education() {
   return (
     <section className="education" id="education">

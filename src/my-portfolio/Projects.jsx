@@ -1,5 +1,3 @@
-import '../styles/main.scss'
-
 function Projects() {
   return (
     <section className="projects" id="projects">

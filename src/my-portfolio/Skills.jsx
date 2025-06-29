@@ -1,4 +1,3 @@
-import '../styles/main.scss';
 import React, { useState } from 'react';
 
 function SoftwareSkills() {

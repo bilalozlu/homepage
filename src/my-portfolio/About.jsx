@@ -33,7 +33,7 @@ function About() {
           <img src="hackerrank.png" alt="hackerrank" width="40px" />
         </a>
       </div>
-      <a className="scroll-link" onClick={scrollToProjects}>Scroll Down ↓</a>
+      <button className="scroll-link" onClick={scrollToProjects}>Scroll Down ↓</button>
     </section>
   );
 }

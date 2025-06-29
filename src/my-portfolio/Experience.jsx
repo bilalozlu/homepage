@@ -55,6 +55,7 @@ function Experience() {
 
   return (
     <section className="experience" id="experience">
+      <h2>Experiences</h2>
       <div>
         {experienceData.map((data, index) =>
           <>

@@ -1,6 +1,7 @@
 function Education() {
   return (
     <section className="education" id="education">
+      <h2>Education</h2>
       <div>
         <p>
           ODTÜ - Computer Engineering

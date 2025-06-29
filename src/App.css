@@ -25,6 +25,11 @@ footer {
   color: #eee;
 }
 
+.profile img {
+  border: 4px solid #104020;
+  border-radius: 50%;
+}
+
 h1 {
   font-family: monospace;
 }

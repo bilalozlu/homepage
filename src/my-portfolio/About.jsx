@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 
+const titles = ["Full-Stack JavaScript Engineer", "React & Node.js Developer"];
+
 function About() {
-  const titles = ["Full-Stack JavaScript Engineer", "React & Node.js Developer"];
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -24,7 +25,7 @@ function About() {
     }, deleting ? 25 : 50);
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, deleting, titles]);
+  }, [subIndex, index, deleting]);
 
   useEffect(() => {
     setText(titles[index].substring(0, subIndex));

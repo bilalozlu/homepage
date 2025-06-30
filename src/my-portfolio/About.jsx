@@ -24,7 +24,7 @@ function About() {
     }, deleting ? 25 : 50);
 
     return () => clearTimeout(timeout);
-  }, [subIndex, index, deleting]);
+  }, [subIndex, index, deleting, titles]);
 
   useEffect(() => {
     setText(titles[index].substring(0, subIndex));

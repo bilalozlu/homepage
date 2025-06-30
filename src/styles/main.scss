@@ -22,6 +22,7 @@ body.dark::before {
 }
 
 body {
+  background-color: $lightColor;
   color: $darkColor;
 }
 
@@ -35,21 +36,21 @@ body.dark {
   top: 1rem;
   right: 2rem;
   z-index: 10;
-  width: 3rem;
-  height: 3rem;
-  font-size: 2.4rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
   cursor: pointer;
-  border: 1px transparent solid;
+  border: none;
   border-radius: 50%;
+  color: $darkColor;
   background-color: inherit;
 
   &:hover {
-    background-color: #efefef;
+    background-color: #dedede;
   }
 }
 
 body.dark .theme-toggle {
-  background-color: inherit;
   color: $lightColor;
 
   &:hover {
@@ -58,7 +59,7 @@ body.dark .theme-toggle {
 }
 
 .app section {
-  padding: 6rem 2rem;
+  padding: 6rem 1rem;
   max-width: 800px;
   margin: auto;
 }
@@ -79,27 +80,33 @@ body.dark .theme-toggle {
   }
 
   p {
-    font-size: 20px;
+    font-size: 24px;
   }
 
-  .copyright {
-    font-size: 8px;
-    position: absolute;
-    bottom: 0px;
-    opacity: 0.9;
+  .blinking-cursor {
+    display: inline-block;
+    width: 1px;
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
   }
 
   .links {
     display: flex;
     justify-content: space-between;
     align-self: center;
-    width: 40vw;
-    height: 40px;
-    margin-top: 40px;
+    width: 50vw;
+    max-width: 800px;
+    height: 4rem;
+    margin: 4rem 0;
   }
 
   .link {
-    opacity: 0.8;
+    opacity: 0.75;
   }
 
   .link:hover {
@@ -118,25 +125,28 @@ body.dark .theme-toggle {
     display: none;
   }
 
-  @media only screen and (max-width: 960px) {
-    .links2 {
-      width: 60vw;
-    }
-  }
-
   .scroll-link {
-    margin-top: 2rem;
-    padding: 2px 10px;
+    margin-top: 6rem;
+    padding: 6px 30px;
     font-weight: bold;
-    text-decoration: none;
-    transition: 0.2s;
     cursor: pointer;
-    border: 2px solid $darkColor;
+    background-color: #2d3a45;
+    color: $lightColor;
+    border: none;
     border-radius: 10% / 50%;
 
     &:hover {
-      opacity: 0.7;
+      background-color: $darkColor;
     }
+  }
+}
+
+body.dark .scroll-link {
+  background-color: #dedede;
+  color: $darkColor;
+
+  &:hover {
+    background-color: $lightColor;
   }
 }
 

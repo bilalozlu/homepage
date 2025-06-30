@@ -1,4 +1,34 @@
+import { useState, useEffect } from "react";
+
 function About() {
+  const titles = ["Full-Stack JavaScript Engineer", "React & Node.js Developer"];
+  const [text, setText] = useState("");
+  const [index, setIndex] = useState(0);
+  const [subIndex, setSubIndex] = useState(0);
+  const [deleting, setDeleting] = useState(false);
+
+  useEffect(() => {
+    if (subIndex === titles[index].length + 1 && !deleting) {
+      setTimeout(() => setDeleting(true), 2000);
+      return;
+    }
+
+    if (subIndex === 0 && deleting) {
+      setDeleting(false);
+      setIndex((prev) => (prev + 1) % titles.length);
+      return;
+    }
+
+    const timeout = setTimeout(() => {
+      setSubIndex((prev) => prev + (deleting ? -1 : 1));
+    }, deleting ? 25 : 50);
+
+    return () => clearTimeout(timeout);
+  }, [subIndex, index, deleting]);
+
+  useEffect(() => {
+    setText(titles[index].substring(0, subIndex));
+  }, [subIndex, index]);
 
   const scrollToProjects = (e) => {
     e.preventDefault();
@@ -14,26 +44,26 @@ function About() {
         <img src="profile.jpg" alt="profile" width="180px" />
       </div>
       <h1>Bilal ÖZLÜ</h1>
-      <p>Full-stack javascript engineer</p>
+      <p><span>{text}</span><span className="blinking-cursor">|</span></p>
       <div className='links'>
         <a className="link" href="https://www.linkedin.com/in/bilalozlu/">
           <img src="linkedin_bw.png" alt="linkedin" width="40px" />
           <img src="linkedin.png" alt="linkedin" width="40px" />
         </a>
         <a className="link" href="https://github.com/bilalozlu/">
-          <img src="github.png" alt="github" width="42px" />
-          <img src="github.png" alt="github" width="42px" />
+          <img src="github.png" alt="github" width="44px" />
+          <img src="github.png" alt="github" width="44px" />
         </a>
         <a className="link" href="https://www.medium.com/@bilalozlu/">
-          <img src="medium.png" alt="medium" width="41px" />
-          <img src="medium.png" alt="medium" width="41px" />
+          <img src="medium.png" alt="medium" width="42px" />
+          <img src="medium.png" alt="medium" width="42px" />
         </a>
         <a className="link" href="https://www.hackerrank.com/bilalozlu/">
           <img src="hackerrank_bw.png" alt="hackerrank" width="40px" />
           <img src="hackerrank.png" alt="hackerrank" width="40px" />
         </a>
       </div>
-      <button className="scroll-link" onClick={scrollToProjects}>Scroll Down ↓</button>
+      <button className="scroll-link" onClick={scrollToProjects}>Scroll Down ⯆</button>
     </section>
   );
 }

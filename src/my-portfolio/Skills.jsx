@@ -51,6 +51,7 @@ function SoftwareSkills() {
 
   return (
     <section className="skills" id="skills">
+      <h2>Skills</h2>
       <div>
         {skillData.map((data, index) =>
           <>

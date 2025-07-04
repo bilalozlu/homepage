@@ -4,10 +4,10 @@ function Education() {
       <h2>Education</h2>
       <div>
         <p>
-          ODTÜ - Computer Engineering
+          BSc in Computer Engineering  
         </p>
-        <p className='description'>
-          2020
+        <p>
+          ODTÜ, 2020
         </p>
       </div>
     </section>

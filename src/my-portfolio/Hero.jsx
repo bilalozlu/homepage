@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const titles = ["Full-Stack JavaScript Engineer", "React & Node.js Developer"];
 
-function About() {
+function Hero() {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -40,7 +40,7 @@ function About() {
   };
 
   return (
-    <section className="about" id="about">
+    <section className="hero" id="hero">
       <div className='profile'>
         <img src="profile.jpg" alt="profile" width="180px" />
       </div>
@@ -69,4 +69,4 @@ function About() {
   );
 }
 
-export default About;
+export default Hero;

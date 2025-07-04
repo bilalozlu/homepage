@@ -1,7 +1,7 @@
 import './styles/main.scss';
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import About from './my-portfolio/About.jsx';
+import Hero from './my-portfolio/Hero.jsx';
 import Experience from './my-portfolio/Experience.jsx';
 import Education from './my-portfolio/Education.jsx';
 import SoftwareSkills from './my-portfolio/Skills.jsx';
@@ -19,7 +19,7 @@ function App() {
       <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
         {darkMode ? "◐" : "◑"}
       </button>
-      <About />
+      <Hero />
       <Experience />
       <Projects />
       <Education />

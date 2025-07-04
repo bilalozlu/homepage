@@ -7,7 +7,7 @@ function Experience() {
       companyName: "Tubitak YTE",
       date: "05.2023 – ongoing",
       position: "Full-time Software Engineer",
-      description: []
+      description: ["Developing a large-scaled web app(tax system of Türkiye) with NextJS, TypeScript on the front", "Managing a core front-end library where most components based on MUI"]
     },
     {
       companyName: "HAVELSAN",
@@ -55,10 +55,10 @@ function Experience() {
 
   return (
     <section className="experience" id="experience">
-      <h2>Experiences</h2>
+      <h2>Work Experience</h2>
       <div>
         {experienceData.map((data, index) =>
-          <>
+          <div>
             <div
               onMouseEnter={() => {
                 setIsHoverOn(index);
@@ -78,7 +78,8 @@ function Experience() {
                 {'\u2022'} {oneJob}
               </p>
             )}
-          </>
+            <hr/>
+          </div>
         )}
       </div>
     </section>

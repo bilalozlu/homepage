@@ -5,18 +5,18 @@ function SoftwareSkills() {
   const skillData = [
     {
       skillName: "JavaScript",
-      description: ["2.5 years of experience in industry", "Frontend of graduation project", "Developed 'bilalozlu.com'",
+      description: ["5 years of experience in industry", "Frontend of graduation project", "Developed 'bilalozlu.com'",
         "Mostly used with frameworks & libraries", "Using actively", "Following latest updates"]
     },
     {
       skillName: "React",
-      description: ["2 years of experince in industry", "Frontend of graduation project", "Developed 'bilalozlu.com'",
+      description: ["4 years of experince in industry", "Frontend of graduation project", "Developed 'bilalozlu.com'",
         "Used redux", "Used hooks", "Developement with both class and functional components",
         "Following best practices", "Using actively", "Following latest updates"]
     },
     {
       skillName: "Java",
-      description: ["1 year of experience in industry", "Knowledge of OOP & Clean Code", "Familiar with development environment",
+      description: ["2 year of experience in industry", "Knowledge of OOP & Clean Code", "Familiar with development environment",
         "Familiar with design patterns"]
     },
     {
@@ -54,7 +54,7 @@ function SoftwareSkills() {
       <h2>Skills</h2>
       <div>
         {skillData.map((data, index) =>
-          <>
+          <div>
             <div
               onMouseEnter={() => {
                 setIsHoverOn(index);
@@ -71,7 +71,8 @@ function SoftwareSkills() {
                 {'\u2022'} {oneSkill}
               </p>
             )}
-          </>
+            <hr/>
+          </div>
         )}
       </div>
     </section>

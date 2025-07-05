@@ -8,10 +8,19 @@ import SoftwareSkills from './my-portfolio/Skills.jsx';
 import Projects from './my-portfolio/Projects.jsx';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) return savedTheme === "dark";
+      const hour = new Date().getHours();
+      return hour >= 18 || hour <= 6;
+    }
+    return false;
+  });
 
   useEffect(() => {
     document.body.classList.toggle("dark", darkMode);
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
   return (

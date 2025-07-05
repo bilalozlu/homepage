@@ -33,8 +33,8 @@ function App() {
       <Projects />
       <Education />
       <SoftwareSkills />
-      <a href="BilalOzlu_resume.pdf">Resume</a>
       <hr/>
+      <a href="BilalOzlu_resume.pdf">Resume</a> |
       <Link to={"./solutions"}>solutions </Link>
     </div>
   );

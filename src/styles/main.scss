@@ -59,7 +59,7 @@ body.dark .theme-toggle {
 }
 
 .app section {
-  padding: 6rem 1rem;
+  padding: 5rem 1rem;
   max-width: 800px;
   margin: auto;
 }
@@ -68,6 +68,8 @@ body.dark .theme-toggle {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  min-height: calc(100vh - 10rem);
 
   .profile img {
     border: 4px solid;
@@ -76,7 +78,7 @@ body.dark .theme-toggle {
 
   h1 {
     font-family: monospace;
-    font-size: 60px;
+    font-size: 56px;
   }
 
   p {
@@ -98,11 +100,11 @@ body.dark .theme-toggle {
   .links {
     display: flex;
     justify-content: space-between;
-    align-self: center;
     width: 50vw;
     max-width: 800px;
     height: 4rem;
-    margin: 4rem 0;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 
   .link {
@@ -126,7 +128,8 @@ body.dark .theme-toggle {
   }
 
   .scroll-link {
-    margin-top: 6rem;
+    position: absolute;
+    bottom: 1rem;
     padding: 6px 30px;
     font-weight: bold;
     cursor: pointer;

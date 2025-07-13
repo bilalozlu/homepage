@@ -108,7 +108,7 @@ body.dark .theme-toggle {
   }
 
   .link {
-    opacity: 0.75;
+    opacity: 1;
   }
 
   .link:hover {
@@ -151,6 +151,26 @@ body.dark .scroll-link {
   &:hover {
     background-color: $lightColor;
   }
+}
+
+.experience {
+  .logo {
+    padding: 2px;
+    border-radius: 4px;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    background-color: transparent;
+    filter: grayscale(100%);
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
+
+body.dark .logo {
+  background-color: #eee;
 }
 
 .project-list {

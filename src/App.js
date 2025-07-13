@@ -30,12 +30,11 @@ function App() {
       </button>
       <Hero />
       <Experience />
-      <Projects />
       <Education />
       <SoftwareSkills />
+      <Projects />
       <hr/>
-      <a href="BilalOzlu_resume.pdf">Resume</a> |
-      <Link to={"./solutions"}>solutions </Link>
+      <a href="BilalOzlu_resume.pdf">PDF Resume</a>
     </div>
   );
 }

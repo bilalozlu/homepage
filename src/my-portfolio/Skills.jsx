@@ -51,30 +51,25 @@ function SoftwareSkills() {
 
   return (
     <section className="skills" id="skills">
-      <h2>Skills</h2>
-      <div>
-        {skillData.map((data, index) =>
-          <div>
-            <div
-              onMouseEnter={() => {
-                setIsHoverOn(index);
-              }}
-              onMouseLeave={() => {
-                setIsHoverOn(-1);
-              }}>
-              <p>
-                {data.skillName}
-              </p>
-            </div>
-            {data.description.map(oneSkill =>
-              <p className={`description ${isHoverOn === index ? 'show' : 'hide'}`}>
-                {'\u2022'} {oneSkill}
-              </p>
-            )}
-            <hr/>
+      <h2 className='head-title'>Skills</h2>
+      {skillData.map((data, index) =>
+        <div>
+          <div
+            onMouseEnter={() => { setIsHoverOn(index) }}
+            onMouseLeave={() => { setIsHoverOn(-1) }}
+            className="skill-area" >
+            <p>
+              {data.skillName}
+            </p>
           </div>
-        )}
-      </div>
+          {data.description.map(oneSkill =>
+            <p className={`description ${isHoverOn === index ? 'show' : 'hide'}`}>
+              {'\u2022'} {oneSkill}
+            </p>
+          )}
+          <hr />
+        </div>
+      )}
     </section>
   );
 }

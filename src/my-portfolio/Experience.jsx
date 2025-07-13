@@ -50,27 +50,25 @@ function Experience() {
 
   return (
     <section className="experience" id="experience">
-      <h2>Work Experience</h2>
-      <div>
-        {experienceData.map((data, index) =>
-          <div>
-            <div
-              onMouseEnter={() => {setIsHoverOn(index)}}
-              onMouseLeave={() => {setIsHoverOn(-1)}}
-              className="job-area" >
-              <img src={data.logo} alt="company_logo" className="logo" />
-              <p>{data.companyName}</p>
-              <p>{data.position} | {data.date}</p>
-            </div>
-            {data.description.map(oneJob =>
-              <p className={`description ${isHoverOn === index ? 'show' : 'hide'}`}>
-                {'\u2022'} {oneJob}
-              </p>
-            )}
-            <hr/>
+      <h2 className='head-title'>Work Experience</h2>
+      {experienceData.map((data, index) =>
+        <div>
+          <div
+            onMouseEnter={() => { setIsHoverOn(index) }}
+            onMouseLeave={() => { setIsHoverOn(-1) }}
+            className="job-area" >
+            <img src={data.logo} alt="company_logo" className="logo" />
+            <p>{data.companyName}</p>
+            <p>{data.position} | {data.date}</p>
           </div>
-        )}
-      </div>
+          {data.description.map(oneJob =>
+            <p className={`description ${isHoverOn === index ? 'show' : 'hide'}`}>
+              {'\u2022'} {oneJob}
+            </p>
+          )}
+          <hr />
+        </div>
+      )}
     </section>
   );
 }

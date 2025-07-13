@@ -64,6 +64,11 @@ body.dark .theme-toggle {
   margin: auto;
 }
 
+h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -141,6 +146,19 @@ body.dark .scroll-link {
 }
 
 .experience {
+  .head-title:before {
+    position: absolute;
+    content: '';
+    border-bottom: 14px solid #ff4d5a;
+    width: 13.2rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 1.4rem;
+    top: 2.4rem;
+    z-index: -1;
+  }
+
   .job-area {
     cursor: pointer;
 
@@ -166,21 +184,70 @@ body.dark .job-area .logo {
   background-color: $lightColor;
 }
 
-.project-list {
-  display: grid;
-  gap: 2rem;
+.education {
+  .head-title:before {
+    position: absolute;
+    content: '';
+    border-bottom: 14px solid #ff4d5a;
+    width: 8.3rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 1.1rem;
+    top: 2.4rem;
+    z-index: -1;
+  }
 }
 
-.project {
-  padding: 1.5rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: all 0.2s ease;
+.skills {
+  .head-title:before {
+    position: absolute;
+    content: '';
+    border-bottom: 14px solid #ff4d5a;
+    width: 4.4rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 1.1rem;
+    top: 2.4rem;
+    z-index: -1;
+  }
+  
+  .skill-area {
+    cursor: pointer;
+  }
+}
 
-  &:hover {
-    border-color: #0070f3;
-    background: #f0f8ff;
+.projects {
+  .head-title:before {
+    position: absolute;
+    content: '';
+    border-bottom: 14px solid #ff4d5a;
+    width: 6.5rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 1.1rem;
+    top: 2.4rem;
+    z-index: -1;
+  }
+
+  .project-list {
+    display: grid;
+    gap: 2rem;
+
+    .project {
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+
+      &:hover {
+        border-color: #0070f3;
+        background: #f0f8ff;
+      }
+    }
   }
 }
 

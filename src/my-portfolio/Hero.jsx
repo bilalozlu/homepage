@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const titles = ["Full-Stack JavaScript Engineer", "React & Node.js Developer"];
+const titles = ["Full-Stack Sofware Engineer", "React & Node.js Developer"];
 
 function Hero() {
   const [text, setText] = useState("");

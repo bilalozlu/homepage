@@ -1,6 +1,5 @@
 import './styles/main.scss';
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import Hero from './my-portfolio/Hero.jsx';
 import Experience from './my-portfolio/Experience.jsx';
 import Education from './my-portfolio/Education.jsx';

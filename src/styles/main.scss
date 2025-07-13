@@ -123,44 +123,47 @@ body.dark .theme-toggle {
     padding: 6px 30px;
     font-weight: bold;
     cursor: pointer;
-    background-color: #2d3a45;
+    background-color: $darkColor;
+    opacity: 0.9;
     color: $lightColor;
     border: none;
     border-radius: 10% / 50%;
 
     &:hover {
-      background-color: $darkColor;
+      opacity: 1;
     }
   }
 }
 
 body.dark .scroll-link {
-  background-color: #dedede;
   color: $darkColor;
-
-  &:hover {
-    background-color: $lightColor;
-  }
+  background-color: $lightColor;
 }
 
 .experience {
-  .logo {
-    padding: 2px;
-    border-radius: 4px;
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-    background-color: transparent;
-    filter: grayscale(100%);
+  .job-area {
+    cursor: pointer;
+
+    .logo {
+      padding: 2px;
+      border-radius: 4px;
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+      background-color: transparent;
+      filter: grayscale(100%);
+    }
 
     &:hover {
-      filter: grayscale(0%);
+      .logo {
+        filter: grayscale(0%);
+      }
     }
   }
 }
 
-body.dark .logo {
-  background-color: #eee;
+body.dark .job-area .logo {
+  background-color: $lightColor;
 }
 
 .project-list {

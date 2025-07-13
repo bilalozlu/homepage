@@ -108,23 +108,13 @@ body.dark .theme-toggle {
   }
 
   .link {
-    opacity: 1;
+    filter: grayscale(100%);
+    opacity: 0.8;
   }
 
   .link:hover {
+    filter: grayscale(0);
     opacity: 1;
-  }
-
-  .link img:last-child {
-    display: none;
-  }
-
-  .link:hover img:last-child {
-    display: block;
-  }
-
-  .link:hover img:first-child {
-    display: none;
   }
 
   .scroll-link {

@@ -160,13 +160,22 @@ body.dark .scroll-link {
   }
 
   .job-area {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
     cursor: pointer;
+
+    .company-name {
+      margin-top: 0;
+      font-weight: bold;
+    }
 
     .logo {
       padding: 2px;
       border-radius: 4px;
-      width: 45px;
-      height: 45px;
+      width: 60px;
+      height: 60px;
+      margin-right: 12px;
       object-fit: contain;
       background-color: transparent;
       filter: grayscale(100%);
@@ -175,6 +184,11 @@ body.dark .scroll-link {
     &:hover {
       .logo {
         filter: grayscale(0%);
+        opacity: 1;
+      }
+
+      .job-position {
+        color: #ff4d5a;
       }
     }
   }
@@ -252,8 +266,7 @@ body.dark .job-area .logo {
 }
 
 .description {
-  font-size: 20px;
-  margin-bottom: 6px;
+  font-size: 16px;
 }
 
 .description.hide {

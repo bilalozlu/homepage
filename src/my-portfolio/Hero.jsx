@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const titles = ["Full-Stack Sofware Engineer", "React & Node.js Developer"];
+const titles = ["Full-Stack Software Engineer", "React & Node.js Developer"];
 
 function Hero() {
   const [text, setText] = useState("");
@@ -51,7 +51,7 @@ function Hero() {
           <img src="linkedin.png" alt="linkedin" width="40px" />
         </a>
         <a className="link" href="https://github.com/bilalozlu/">
-          <img src="github.png" alt="github" width="44px" />
+          <img src="github.png" alt="github" width="45px" />
         </a>
         <a className="link" href="https://www.medium.com/@bilalozlu/">
           <img src="medium.png" alt="medium" width="42px" />

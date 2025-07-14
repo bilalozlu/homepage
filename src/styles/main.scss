@@ -149,7 +149,7 @@ body.dark .scroll-link {
   .head-title:before {
     position: absolute;
     content: '';
-    border-bottom: 14px solid #ff4d5a;
+    border-bottom: 14px solid $roseColor;
     width: 13.2rem;
     display: block;
     margin: 0 auto;
@@ -188,7 +188,7 @@ body.dark .scroll-link {
       }
 
       .job-position {
-        color: #ff4d5a;
+        color: $roseColor;
       }
     }
   }
@@ -202,7 +202,7 @@ body.dark .job-area .logo {
   .head-title:before {
     position: absolute;
     content: '';
-    border-bottom: 14px solid #ff4d5a;
+    border-bottom: 14px solid $roseColor;
     width: 8.3rem;
     display: block;
     margin: 0 auto;
@@ -217,7 +217,7 @@ body.dark .job-area .logo {
   .head-title:before {
     position: absolute;
     content: '';
-    border-bottom: 14px solid #ff4d5a;
+    border-bottom: 14px solid $roseColor;
     width: 4.4rem;
     display: block;
     margin: 0 auto;
@@ -228,15 +228,45 @@ body.dark .job-area .logo {
   }
   
   .skill-area {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
     cursor: pointer;
+
+    .skill-name {
+      align-self: center;
+      font-weight: bold;
+    }
+
+    .logo {
+      padding: 2px;
+      border-radius: 4px;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      object-fit: contain;
+      background-color: transparent;
+      filter: grayscale(100%);
+    }
+
+    &:hover {
+      .logo {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    }
   }
+}
+
+body.dark .skill-area .logo {
+  background-color: $lightColor;
 }
 
 .projects {
   .head-title:before {
     position: absolute;
     content: '';
-    border-bottom: 14px solid #ff4d5a;
+    border-bottom: 14px solid $roseColor;
     width: 6.5rem;
     display: block;
     margin: 0 auto;

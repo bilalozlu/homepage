@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function SoftwareSkills() {
   const [isHoverOn, setIsHoverOn] = useState(-1);
@@ -6,47 +6,59 @@ function SoftwareSkills() {
     {
       skillName: "JavaScript",
       description: ["5 years of experience in industry", "Frontend of graduation project", "Developed 'bilalozlu.com'",
-        "Mostly used with frameworks & libraries", "Using actively", "Following latest updates"]
+        "Mostly used with frameworks & libraries", "Using actively", "Following latest updates"],
+      logo: "./javascript_logo.png",
     },
     {
-      skillName: "React",
+      skillName: "TypeScript",
+      description: ["2 years of experience in industry", "Using actively", "Following latest updates"],
+      logo: "./typescript_logo.svg",
+    },
+    {
+      skillName: "ReactJS",
       description: ["4 years of experince in industry", "Frontend of graduation project", "Developed 'bilalozlu.com'",
         "Used redux", "Used hooks", "Developement with both class and functional components",
-        "Following best practices", "Using actively", "Following latest updates"]
+        "Following best practices", "Using actively", "Following latest updates"],
+      logo: "./react_logo.png",
     },
     {
-      skillName: "Java",
-      description: ["2 year of experience in industry", "Knowledge of OOP & Clean Code", "Familiar with development environment",
-        "Familiar with design patterns"]
-    },
-    {
-      skillName: "C / C++",
-      description: ["3 months of experience in industry", "Main languages used in college courses", "Using actively C++ for algortihm challenges & competitive programming"]
+      skillName: "NextJS",
+      description: ["2 years of experince in industry",
+        "Used redux", "Used hooks", "Developement with both class and functional components",
+        "Following best practices", "Using actively", "Following latest updates"],
+      logo: "./nextjs_logo.svg",
     },
     {
       skillName: "NodeJS",
-      description: ["2 months of experience in industry", "Developed several small projects with express"]
+      description: ["2 months of experience in industry", "Developed several projects with express"],
+      logo: "./nodejs_logo.png",
     },
     {
       skillName: "VueJS",
-      description: ["2 months of experience in industry", "Unit testing with Jest"]
+      description: ["2 months of experience in industry", "Unit testing with Jest"],
+      logo: "./vue_logo.png",
     },
     {
       skillName: "React Native",
-      description: ["1 year of experience in industry", "Used redux"]
+      description: ["1 year of experience in industry", "Used redux"],
+      logo: "./reactnative_logo.svg",
+    },
+    {
+      skillName: "Java",
+      description: ["3 year of experience in industry", "Knowledge of OOP & Clean Code", "Familiar with development environment",
+        "Familiar with design patterns"],
+      logo: "./java_logo.png",
     },
     {
       skillName: "Python",
-      description: ["No experience in industry", "Mostly used in college"]
+      description: ["No experience in industry", "Mostly used in college"],
+      logo: "./python_logo.svg",
     },
     {
-      skillName: "NoSQL",
-      description: ["No experience in industry", "Used for several small projects"]
+      skillName: "MongoDB",
+      description: ["Limited experience in industry", "Used for several projects"],
+      logo: "./mongodb_logo.svg",
     },
-    {
-      skillName: "MySQL",
-      description: ["2 months of experience in industry", "Mostly used in college"]
-    }
   ]
 
   return (
@@ -58,7 +70,8 @@ function SoftwareSkills() {
             onMouseEnter={() => { setIsHoverOn(index) }}
             onMouseLeave={() => { setIsHoverOn(-1) }}
             className="skill-area" >
-            <p className="description">{data.skillName}</p>
+            <img src={data.logo} alt="skill_logo" className="logo" />
+            <p className="skill-name">{data.skillName}</p>
           </div>
           {data.description.map(oneSkill =>
             <p className={`description ${isHoverOn === index ? 'show' : 'hide'}`}>

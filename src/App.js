@@ -33,7 +33,9 @@ function App() {
       <SoftwareSkills />
       <Projects />
       <hr/>
-      <a href="BilalOzlu_resume.pdf">PDF Resume</a>
+      <div style={{display: 'flex' , justifyContent: 'center'}}>
+        <a href="BilalOzlu_resume.pdf" style={{color: '#ff4d5a'}}>PDF Resume</a>
+      </div>
     </div>
   );
 }

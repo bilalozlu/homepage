@@ -42,7 +42,7 @@ function Hero() {
   return (
     <section className="hero" id="hero">
       <div className='profile'>
-        <img src="profile.jpg" alt="profile" width="180px" />
+        <img src="profile.jpg" fetchpriority="high" alt="profile" width="180px" />
       </div>
       <h1>Bilal ÖZLÜ</h1>
       <p><span>{text}</span><span className="blinking-cursor">|</span></p>

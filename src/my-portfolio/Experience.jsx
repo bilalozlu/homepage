@@ -13,7 +13,7 @@ const experienceData = [
     date: "02.2022 – 05.2023 (1 year, 4mo)",
     position: "Software Engineer",
     logo: "./havelsan_logo.svg",
-    description: ["Modernized a legacy system by building a cross-platform ReactJS frontend (desktop & browser)", "Collaborated on a large-scale Java & Spring defense project to meet acceptance test requirements", "Managed software requirements using DOORS and JIRA"]
+    description: ["Modernized a legacy system by building a cross-platform ReactJS frontend (desktop & browser)", "Worked on a large-scale Java & Spring defense project to meet acceptance test requirements", "Managed software requirements using DOORS and JIRA"]
   },
   {
     companyName: "StartupHeroes",

@@ -5,6 +5,7 @@ import Experience from './my-portfolio/Experience.jsx';
 import Education from './my-portfolio/Education.jsx';
 import SoftwareSkills from './my-portfolio/Skills.jsx';
 import Projects from './my-portfolio/Projects.jsx';
+import Footer from './footer/Footer.jsx';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -33,9 +34,7 @@ function App() {
       <SoftwareSkills />
       <Projects />
       <hr/>
-      <div style={{display: 'flex' , justifyContent: 'center'}}>
-        <a href="BilalOzlu_resume.pdf" style={{color: '#ff4d5a'}}>PDF Resume</a>
-      </div>
+      <Footer />
     </div>
   );
 }

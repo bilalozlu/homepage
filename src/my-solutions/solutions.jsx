@@ -1,6 +1,6 @@
 import './solutions.css'
 
-function Projects() {
+function Solutions() {
     const solutionsList = [
         {
             problem: "hello world",
@@ -49,4 +49,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default Solutions;

@@ -4,6 +4,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import './index.css';
 import App from './App';
 import Solutions from './my-solutions/solutions';
+import Now from './now/now';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -14,6 +15,7 @@ root.render(
         <Routes>
           <Route path="/" element={<App/>}/>
           <Route path="/solutions" element={<Solutions/>}/>
+          <Route path="/now" element={<Now/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>

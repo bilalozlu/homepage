@@ -26,7 +26,7 @@ function App() {
   return (
     <div className='app'>
       <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
-        {darkMode ? "◐" : "◑"}
+        {"◐"}
       </button>
       <Hero />
       <Experience />

@@ -73,11 +73,13 @@ function SoftwareSkills() {
             <img src={data.logo} alt="skill_logo" className="logo" />
             <p className="skill-name">{data.skillName}</p>
           </div>
-          {data.description.map(oneSkill =>
-            <p className={`description ${isHoverOn === index ? 'show' : 'hide'}`}>
-              {'\u2022'} {oneSkill}
-            </p>
-          )}
+          <div className={`description-area ${isHoverOn === index ? 'show' : 'hide'}`}>
+            {data.description.map(oneSkill =>
+              <p>
+                {'\u2022'} {oneSkill}
+              </p>
+            )}
+          </div>
           <hr />
         </div>
       )}

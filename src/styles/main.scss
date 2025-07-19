@@ -178,6 +178,7 @@ body.dark .scroll-link {
       margin-right: 12px;
       object-fit: contain;
       background-color: transparent;
+      transition: all 0.3s ease;
       filter: grayscale(100%);
     }
 
@@ -188,6 +189,7 @@ body.dark .scroll-link {
       }
 
       .job-position {
+        transition: all 0.3s ease;
         color: $roseColor;
       }
     }
@@ -246,6 +248,7 @@ body.dark .job-area .logo {
       margin-right: 10px;
       object-fit: contain;
       background-color: transparent;
+      transition: all 0.3s ease;
       filter: grayscale(100%);
     }
 
@@ -281,54 +284,88 @@ body.dark .skill-area .logo {
     gap: 2rem;
 
     .project {
-      padding: 1.5rem;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+      padding: 1rem;
+      border: 1px solid $darkColor;
+      border-radius: 4px;
       text-decoration: none;
-      transition: all 0.2s ease;
+      transition: all 0.3s ease;
+      color: $darkColor;
 
       &:hover {
-        border-color: #0070f3;
-        background: #f0f8ff;
+        background-color: $roseColor;
+        opacity: 0.9;
       }
     }
   }
 }
 
-.description {
-  font-size: 16px;
+body.dark .project-list .project {
+  border-color: $lightColor;
+  color: $lightColor;
 }
 
-.description.hide {
-  display: none;
+.description-area {
+  overflow: hidden;
+  transition: all 0.6s ease;
 }
 
-.description.show {
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s;
+.description-area.show {
+  max-height: 600px;
+  opacity: 1;
+  animation: fadeIn 0.6s;
 }
 
+.description-area.hide {
+  max-height: 0;
+  opacity: 0;
+  animation: fadeOut 0.6s;
+}
 
 @-webkit-keyframes fadeIn {
   from {
+    max-height: 0;
     opacity: 0;
   }
 
   to {
+    max-height: 600px;
     opacity: 1;
   }
 }
 
 @keyframes fadeIn {
   from {
+    max-height: 0;
     opacity: 0;
   }
 
   to {
+    max-height: 600px;
     opacity: 1;
   }
 }
 
+@-webkit-keyframes fadeOut {
+  from {
+    max-height: 600px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    max-height: 600px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
+}
 
 .footer {
   text-align: center; 

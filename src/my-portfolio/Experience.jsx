@@ -63,11 +63,13 @@ function Experience() {
               <p className="job-position">{data.position} | {data.date}</p>
             </div>
           </div>
-          {data.description.map(oneJob =>
-            <p className={`description ${isHoverOn === index ? 'show' : 'hide'}`}>
-              {'\u2022'} {oneJob}
-            </p>
-          )}
+          <div className={`description-area ${isHoverOn === index ? 'show' : 'hide'}`}>
+            {data.description.map(oneJob =>
+              <p>
+                {'\u2022'} {oneJob}
+              </p>
+            )}
+          </div>
           <hr />
         </div>
       )}

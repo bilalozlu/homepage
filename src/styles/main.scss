@@ -374,6 +374,12 @@ body.dark .project-list .project {
 
 .now {
   text-align: center; 
+  max-width: 800px;
+  margin: auto;
+
+  h2 {
+    margin-bottom: 40px;
+  }
 
   h2:before {
     position: absolute;
@@ -390,17 +396,17 @@ body.dark .project-list .project {
 
   p {
     font-size: 18px;
+    margin-top: 18px;
   }
 
   .nameTitle {
     position: fixed;
     top: 2rem;
-    left: 2rem;
+    left: 1rem;
     z-index: 10;
     padding: 10px;
     border: 2px dotted;
     border-radius: 10px;
-    font-size: 20px;
     text-decoration: none;
     color: $darkColor;
   }

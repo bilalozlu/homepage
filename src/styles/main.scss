@@ -371,3 +371,47 @@ body.dark .project-list .project {
   text-align: center; 
   margin-bottom: 1rem;
 }
+
+.now {
+  text-align: center; 
+
+  h2:before {
+    position: absolute;
+    content: '';
+    border-bottom: 14px solid $roseColor;
+    width: 3.6rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 1.3rem;
+    top: 2.4rem;
+    z-index: -1;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .nameTitle {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+    padding: 10px;
+    border: 2px dotted;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: $darkColor;
+  }
+
+  .footerText {
+    position: absolute;
+    bottom: 1rem;
+    justify-self: center;
+  }
+}
+
+body.dark .now .nameTitle {
+  color: $lightColor;
+}

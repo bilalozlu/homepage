@@ -1,4 +1,5 @@
 import './solutions.css'
+import ThemeToggle from "../theme-toggle/ThemeToggle";
 
 function Solutions() {
     const solutionsList = [
@@ -19,6 +20,7 @@ function Solutions() {
     ]
     return (
         <div className="solutions">
+            <ThemeToggle />
             <h2 className='solutionsTitle'>
                 The list of problems I encountered during coding and how did I fix them
             </h2>

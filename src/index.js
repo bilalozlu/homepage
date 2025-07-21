@@ -5,19 +5,21 @@ import './index.css';
 import App from './App';
 import Solutions from './my-solutions/solutions';
 import Now from './now/now';
-
+import { ThemeProvider } from "./context/ThemeContext";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App/>}/>
-          <Route path="/solutions" element={<Solutions/>}/>
-          <Route path="/now" element={<Now/>}/>
+          <Route path="/" element={<App />} />
+          <Route path="/solutions" element={<Solutions />} />
+          <Route path="/now" element={<Now />} />
         </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 

@@ -22,7 +22,7 @@ function Solutions() {
         <div className="solutions">
             <ThemeToggle />
             <h2 className='solutionsTitle'>
-                The list of problems I encountered during coding and how did I fix them
+                Solutions
             </h2>
             <div>
                 <p>SEARCH</p>

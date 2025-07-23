@@ -421,3 +421,38 @@ body.dark .project-list .project {
 body.dark .now .nameTitle {
   color: $lightColor;
 }
+
+.solutions {
+  max-width: 800px;
+  margin: auto;
+
+  h2:before {
+    position: absolute;
+    content: '';
+    border-bottom: 14px solid $roseColor;
+    width: 7.7rem;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    left: 1.1rem;
+    top: 2.4rem;
+    z-index: -1;
+  }
+
+  .nameTitle {
+    position: fixed;
+    top: 2rem;
+    left: 1rem;
+    z-index: 10;
+    padding: 10px;
+    border: 2px dotted;
+    border-radius: 10px;
+    text-decoration: none;
+    color: $darkColor;
+  }
+  
+}
+
+body.dark .solutions .nameTitle {
+  color: $lightColor;
+}

@@ -7,9 +7,8 @@ function Now() {
             <ThemeToggle />
             <a className="nameTitle" href="../"> ◁ Bilal ÖZLÜ</a>
             <h2>Now</h2>
-            <p>{'\u2022'} Working as a full-stack software engineer at TÜBİTAK, in Ankara </p>
-            <p>{'\u2022'} Rediscovering the World with my 3 year old daughter </p>
-            <p>{'\u2022'} Reading 'Effective Java' </p>
+            <p>{'\u2022'} Working as a software engineer at ASELSAN, in Ankara </p>
+            <p>{'\u2022'} Pursuing a master's degree in Computer Engineering at Hacettepe University  </p>
             <p>{'\u2022'} Striving to get Meta front-end developer professional certificate </p>
             <p>{'\u2022'} Trying to figure out how to use AI agents most effectively in a safe manner </p>
             <p>{'\u2022'} Also, trying to figure out how will be the software development in the future </p>

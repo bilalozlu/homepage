@@ -1,9 +1,16 @@
 import { useState } from 'react';
 
 const experienceData = [
+    {
+    companyName: "ASELSAN",
+    date: "09.2026",
+    position: "Software Engineer",
+    logo: "",
+    description: [""]
+  },
   {
     companyName: "TÜBİTAK BİLGEM YTE",
-    date: "05.2023 – ongoing",
+    date: "05.2023 – 09.2026",
     position: "Software Engineer",
     logo: "./yte_logo.svg",
     description: ["Developing a large-scale web application (e-Beyan: Türkiye’s national tax system) using Next.js and TypeScript (Java backend)", "Building and managing a shared front-end library used across multiple teams, primarily based on MUI"]

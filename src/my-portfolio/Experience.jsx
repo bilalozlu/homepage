@@ -5,7 +5,7 @@ const experienceData = [
     companyName: "ASELSAN",
     date: "09.2026",
     position: "Software Engineer",
-    logo: "",
+    logo: "./aselsan_logo.png",
     description: [""]
   },
   {

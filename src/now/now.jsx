@@ -13,7 +13,7 @@ function Now() {
             <p>{'\u2022'} Trying to figure out how to use AI agents most effectively in a safe manner </p>
             <p>{'\u2022'} Also, trying to figure out how will be the software development in the future </p>
             <p className="footerText">
-                <i>Inspired by Derek Siver's <a href="https://nownownow.com/about" style={{color: '#ff4d5a'}}>now</a> page movement. Last updated: April 2026.</i>
+                <i>Inspired by Derek Siver's <a href="https://nownownow.com/about" style={{color: '#ff4d5a'}}>now</a> page movement. Last updated: October 2026.</i>
             </p>
         </div>
     );
